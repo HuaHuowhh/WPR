@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ubMO5fnJ9SmY4f+Pckakd0IQK/bxWmu8viOXmGgBUzuVgZ4GG7d9++GptFwQ6ntfvCvaxA84UtvqvziYHD0N2g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\media\\source\\repos\\mediaexplorer74\\WPR\\Src\\Core\\WPR.StandardCompability\\WPR.StandardCompability.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\media\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.26\\microsoft.windows.sdk.net.ref.10.0.17763.26.nupkg.sha512"
+  ],
+  "logs": []
+}

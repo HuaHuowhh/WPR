@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z7PcDRoYNxijNVxIcZS5zplMLVB9CH2F6kY989vu+IszUJuiTJt0eO5uPTlLIiUW5E2Gdf41mk94YoUkLOUemg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\media\\source\\repos\\mediaexplorer74\\WPR\\Src\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\media\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.26\\microsoft.windows.sdk.net.ref.10.0.17763.26.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "C6aXhjGF42oOEt1RNLN6cxZrNJdybcAQajUIvWZ7FcRPX+e3FXXsITZ/1qAHqynjLZ7pfeQmuswKt2uXiN2MgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\media\\source\\repos\\mediaexplorer74\\WPR\\Src\\Core\\Microsoft.Device.Sensors\\Microsoft.Devices.Sensors.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\media\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\media\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\media\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.26\\microsoft.windows.sdk.net.ref.10.0.17763.26.nupkg.sha512"
+  ],
+  "logs": []
+}

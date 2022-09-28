@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4xKlErx2xeY1Ez/2qqgwQ8QZ6A9fSsnB2NEb4dY727IBEfqpGlcwvkJFnYelRxM7Wcrw+I1RnSDmqp94ZFP1Bg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\media\\source\\repos\\mediaexplorer74\\WPR\\Src\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\media\\.nuget\\packages\\k4os.compression.lz4\\1.2.16\\k4os.compression.lz4.1.2.16.nupkg.sha512"
+  ],
+  "logs": []
+}
