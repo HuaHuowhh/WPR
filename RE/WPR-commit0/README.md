@@ -1,4 +1,4 @@
-# WPR proto 0
+# WPR proto 0 (Commit0)
 
 WPR is a WP7-8 XNA app runner.
 
