@@ -23,7 +23,8 @@ WPR is a WP7-8 XNA app runner. This is only fork of [WPR](https://github.com/821
 ## My 2 cents
 
 - I temporally removed Android target (Reason: the multi-platform solution was too hard to assemble for me!)
-- I solve the "no-sound" problem (by copying SDL2.dll, FNA3D.dll, and FFMPEG.exe onto app "work-folder")
+- I solved the "no-sound" problem (by copying SDL2.dll, FNA3D.dll, FAudio.dll and FFMPEG.exe onto app dir.)
+- RE folder added (Reverse Engeneering; consists of Commit0 and Commit1)
 
     
 ## Building (Desktop) 
