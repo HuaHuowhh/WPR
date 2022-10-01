@@ -1,4 +1,4 @@
-# WPR proto 2
+# WPR proto 3
 
 WPR is a WP7-8 XNA app runner. This is only fork of [WPR](https://github.com/8212369/WPR), not the original. 
 
@@ -10,24 +10,17 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - Earning achievements locally for Xbox Live games, with a pop-up appear everytime achievement is unlocked. :)
 
 
-## Screenshots
+## Screenshot(s)
 
-![Shot 1](Images/shot1.png)
-![Shot 2](Images/shot2.png)
-![Shot 3](Images/shot3.png)
-![Shot 4](Images/shot4.png)
-![Shot 5](Images/shot5.png)
-![Shot 6](Images/shot6.png)
-![Shot 7](Images/shot7.png)
-![Shot 8](Images/shot8.png)
+![Android Mobile](Images/shot1.png)
+![Windows Desktop](Images/shot2.png)
 
 
-## My 2 cents
+## My little RnD / experiments
 
-- Android target "returned"/enabled again (Reason: the Avalonia's multi-platform features research)
-- Strange "Android-depandant bug" at About page was fixed by adding only 1 line of code :)
-- I solved the "no-sound" problem (by copying SDL2.dll, FNA3D.dll, FAudio.dll and FFMPEG.exe onto app dir.)
-- RE folder added (Reverse Engeneering; consists of "Commit2")
+- More installed mini-games can start now... but not all... ehhhh! )
+- RE folder deleted (Rev.Eng. phase completed)
+- Last WPR Desktop "dirty bugfixes" transferred (sync-ed) to WPR Android
 
     
 ## Building 
@@ -55,8 +48,9 @@ git clone --recursive https://github.com/8212369/WPR
 
 ## TODO
 
-- Find and tranfer WPR Desktop "dirty bugfixes" from /WPR/RE/Commit2/ to /WPR/Src/ :)
-  
+- Stabilize app running
+- Add XBOX Live "emulation" to XNA
+- ? (idk what is in your brave mind))  
     
 ## This runner existence :: words from the [author/owner/main developer](https://github.com/8212369/) 
 

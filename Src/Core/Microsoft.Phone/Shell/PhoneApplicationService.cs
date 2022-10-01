@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Microsoft.Phone.Shell
 {
@@ -22,7 +23,15 @@ namespace Microsoft.Phone.Shell
 
         public void HandleApplicationStart(bool anew)
         {
-            _Activated?.Invoke(this, new ActivatedEventArgs(!anew));
+            try
+            {
+                _Activated?.Invoke(this, new ActivatedEventArgs(!anew));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] HandleApplicationStart ex. :" + ex.Message);
+            }
+
             _AppActivated = true;
         }
 
@@ -43,7 +52,16 @@ namespace Microsoft.Phone.Shell
             {
                 if (_AppActivated)
                 {
-                    value?.Invoke(this, new ActivatedEventArgs(false));
+                    try
+                    {
+                        value?.Invoke(this, new ActivatedEventArgs(false));
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine("[ex] AppActivated Exception : " + ex.Message);
+
+                        _Activated += value;
+                    }
                 } else
                 {
                     _Activated += value;

@@ -564,9 +564,25 @@ namespace Microsoft.Xna.Framework
 				 */
 				if (BeginDraw())
 				{
-					Draw(gameTime);
-					EndDraw();
-				}
+					try
+					{
+						Draw(gameTime);
+					}
+					catch (Exception ex)
+					{
+						Debug.WriteLine("[ex] Game Draw ex. : " + ex.Message);
+					}
+
+					try
+                    {
+                        EndDraw();
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine("[ex] Game EndDraw ex. : " + ex.Message);
+                    }
+					                    
+                }
 			}
 		}
 
@@ -657,7 +673,17 @@ namespace Microsoft.Xna.Framework
 				Services.GetService(typeof(IGraphicsDeviceService));
 			if (graphicsDeviceService != null)
 			{
-				graphicsDeviceService.DeviceDisposing += (o, e) => UnloadContent();
+				graphicsDeviceService.DeviceDisposing += (o, e) =>
+				{
+					try
+					{
+						UnloadContent();
+					}
+					catch (Exception ex)
+					{
+						Debug.WriteLine("[ex] UnloadContent ex. : " + ex.Message);
+					}
+				};
 				if (graphicsDeviceService.GraphicsDevice != null)
 				{
 					LoadContent();
@@ -781,7 +807,14 @@ namespace Microsoft.Xna.Framework
 				graphicsDeviceManager.CreateDevice();
 			}
 
-			Initialize();
+			try
+			{
+				Initialize();
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine("[ex] Game init ex. : " + ex.Message);
+			}
 
 			/* We need to do this after virtual Initialize(...) is called.
 			 * 1. Categorize components into IUpdateable and IDrawable lists.

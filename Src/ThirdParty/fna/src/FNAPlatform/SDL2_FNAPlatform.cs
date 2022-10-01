@@ -20,6 +20,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
+using System.Diagnostics;
 #endregion
 
 namespace Microsoft.Xna.Framework
@@ -2831,7 +2832,15 @@ namespace Microsoft.Xna.Framework
 					if (	game.Window != null &&
 						evt->window.windowID == SDL.SDL_GetWindowID(game.Window.Handle)	)
 					{
-						game.RedrawWindow();
+						try
+						{
+							game.RedrawWindow();
+						}
+						catch (Exception ex)
+						{
+							Debug.WriteLine("[ex] game.RedrawWindow ex. : "
+								+ ex.Message);
+						}
 						return 0;
 					}
 				}

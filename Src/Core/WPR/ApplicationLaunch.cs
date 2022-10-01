@@ -12,6 +12,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using WPR.XnaCompability;
+using System.Diagnostics;
 
 namespace WPR
 {
@@ -84,7 +85,16 @@ namespace WPR
                         };
                     }
 
-                    obj.Run();
+                    
+
+                    try
+                    {
+                        obj.Run();
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine($"[ex] obj.Run ex. : {ex.Message}");
+                    }
 
                     try
                     {
@@ -92,10 +102,18 @@ namespace WPR
                     }
                     catch (Exception ex)
                     {
-                        Log.Warn(LogCategory.AppList, $"Ignored clean-up exception:\n {ex}");
+                        Debug.WriteLine($"[ex] HandleApplicationExit ex. : {ex.Message}");
+                        Log.Warn(LogCategory.AppList, $"Ignored clean-up exception:\n {ex.Message}");
                     }
-
-                    obj.Exit();
+                    
+                    try
+                    {
+                        obj.Exit();
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine($"[ex] obj.Exit ex. : {ex.Message}");
+                    }
                 }
             });
         }

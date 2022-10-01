@@ -1,5 +1,5 @@
 ﻿using DesktopNotifications;
-using DesktopNotifications.Apple;
+//using DesktopNotifications.Apple;
 using DesktopNotifications.FreeDesktop;
 using DesktopNotifications.Windows;
 
@@ -29,11 +29,13 @@ namespace WPR.Common
             {
                 NotificationManager = new WindowsNotificationManager();
             }
-            else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+            //else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+            //{
+            //   NotificationManager = new AppleNotificationManager();
+            //} else 
             {
-                NotificationManager = new AppleNotificationManager();
-            } else {
-                throw new PlatformNotSupportedException();
+                //throw new PlatformNotSupportedException();
+                NotificationManager = new WindowsNotificationManager();
             }
 #endif
             NotificationManager.Initialize();

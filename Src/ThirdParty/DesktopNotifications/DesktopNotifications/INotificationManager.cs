@@ -4,7 +4,9 @@ using System.Threading.Tasks;
 namespace DesktopNotifications
 {
     /// <summary>
-    /// Interface for notification managers that handle the presentation and lifetime of notifications.
+    /// Interface for 
+    /// 
+    /// managers that handle the presentation and lifetime of notifications.
     /// </summary>
     public interface INotificationManager : IDisposable
     {
