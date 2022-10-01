@@ -1,4 +1,4 @@
-# WPR proto 1-alpha (Commit2)
+# WPR proto 1 (Commit2)
 
 ## Results of my R.E. /RnD
 - I concentrated on "Desktop case" (windows target)
