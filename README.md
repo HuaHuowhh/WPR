@@ -46,9 +46,9 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 
 - I also used the newest VS 2022 Preview to build this mind-blowing code. Plus I installed "Avalonia" extension from VS Marketplace (maybe, it could help to "auto-bind/auto-recompile java deals".. who knows?)))
 - I "lost" all my code fixes because of I repeat to fork the original WPR (with ALL java bindings). I use this command (at cmd line):
-
+```
 git clone --recursive https://github.com/8212369/WPR
-
+```
 - I specially deleted .gitmodules file for reducing the problems when I'll be upload the result onto GitHub repo.
 - Before building I check that .NET 6 installed (recovered by VS) in my system.
 
