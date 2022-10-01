@@ -30,7 +30,9 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - RE folder added (Reverse Engeneering; consists of Commit0 and Commit1)
 
     
-## Building : Windows (Desktop) target  
+## Building 
+
+### Windows (Desktop) target  
 
 - I used the newest VS 2022 Preview to build this super-hard src code
 - Build these libraries and place them under the same folder as the executable
@@ -40,7 +42,7 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
     * FAudio
     * libtheorafile 
 
-## Building : Android target 
+### Android target 
 
 - I also used the newest VS 2022 Preview to build this mind-blowing code. Plus I installet Avalonia extension from VS Marketplace
 - I "lost" all my code fixes because of I repeat to fork the original WPR (with ALL java bindings). I use this command (at cmd line):
@@ -50,6 +52,7 @@ git clone --recursive https://github.com/8212369/WPR
 - I specially deleted .gitmodules file for reducing the problems when I'll be upload the result onto GitHub repo.
 - Before building I check that .NET 6 installed (recovered by VS) in my system.
 
+
 ## TODO
 
 - Find and tranfer "bugfixes" from /RE/WPR to /Src/WPR
@@ -57,18 +60,16 @@ git clone --recursive https://github.com/8212369/WPR
     
 ## This runner existence :: words from the [author/owner/main developer](https://github.com/8212369/) 
 
-"
-- It's for fun. If you are nostaglia mostly about achievements earning like me, you can try it out. There are some old games that is not released on Android or iOS, or some games that seems superior than Android or iOS version (I prefer Skulls of the Shogun on WP actually).
-- However, resolution scaling is not yet implemented (game renders either in 480x800 or so...), but it's fun!
-"
+" It's for fun. If you are nostaglia mostly about achievements earning like me, you can try it out. There are some old games that is not released on Android or iOS, or some games that seems superior than Android or iOS version (I prefer Skulls of the Shogun on WP actually).
+ However, resolution scaling is not yet implemented (game renders either in 480x800 or so...), but it's fun!" :: Lin Yan (8212369)
 
 
-## ..
+## :: ::
 
 AS IS. No support. RnD only. DIY.
 
 
-## .
+## ::
 
-[m][e] 2022 , September
+[m][e] 2022 , October
 

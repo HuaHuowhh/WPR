@@ -4,7 +4,7 @@
 - I concentrated on "Desktop case" (windows target)
 - Android projects temporary deleted from WPR solution (reason: the solution was soooo huuuugee))) ;)
 - Some games (i.e., Fruit Ninja, Birds on Fire) can run ok
-- Some games don't fails to start (strange bug catced, LoadException named... no dependant dlls?) but installed "normally"
+- Some games don't fails to start (strange bug catched, LoadException named... no dependant dlls?) but installed "normally"
 - Games' Database state not damaged after app restart... but important operation [D]elete (i mean CRUD) not realized yet
 - Only 22 projects at Solutions (not 26, as original WPR)))
 
