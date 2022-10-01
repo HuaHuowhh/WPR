@@ -6,7 +6,7 @@
 - Some games (i.e., Fruit Ninja, Birds on Fire) can run ok
 - Some games don't fails to start (strange bug catched, LoadException named... no dependant dlls?) but installed "normally"
 - Games' Database state not damaged after app restart... but important operation [D]elete (i mean CRUD) not realized yet
-- Only 22 projects at Solutions (not 26, as original WPR)))
+- Only 19 projects at Solutions (not 26, as original WPR)))
 
 
 ## Comments from the author (English / Russian / Chinese translation):

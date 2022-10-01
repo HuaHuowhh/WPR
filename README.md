@@ -27,7 +27,7 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - Android target "returned"/enabled again (Reason: the Avalonia's multi-platform features research)
 - Strange "Android-depandant bug" at About page was fixed by adding only 1 line of code :)
 - I solved the "no-sound" problem (by copying SDL2.dll, FNA3D.dll, FAudio.dll and FFMPEG.exe onto app dir.)
-- RE folder added (Reverse Engeneering; consists of Commit0 and Commit1)
+- RE folder added (Reverse Engeneering; consists of "Commit2")
 
     
 ## Building 
@@ -55,7 +55,7 @@ git clone --recursive https://github.com/8212369/WPR
 
 ## TODO
 
-- Find and tranfer "bugfixes" from /RE/WPR to /Src/WPR
+- Find and tranfer WPR Desktop "dirty bugfixes" from /RE/WPR/Commit2 to /Src/WPR :)
   
     
 ## This runner existence :: words from the [author/owner/main developer](https://github.com/8212369/) 
