@@ -55,7 +55,7 @@ git clone --recursive https://github.com/8212369/WPR
 
 ## TODO
 
-- Find and tranfer WPR Desktop "dirty bugfixes" from /RE/WPR/Commit2 to /Src/WPR :)
+- Find and tranfer WPR Desktop "dirty bugfixes" from /WPR/RE/Commit2/ to /WPR/Src/ :)
   
     
 ## This runner existence :: words from the [author/owner/main developer](https://github.com/8212369/) 
