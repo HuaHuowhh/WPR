@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uDumA3Ytm8HhDauwXWCVmkL8Jqho1vCPlBat6SLpPvA+QlLIzFwpEfzM5KXamP76rz8TZDvToBmdoB2KZqQ6BA==",
+  "dgSpecHash": "VmnJNdyClTX+jBzA0aD3KOqDJwUjteg+tcUef9NHFFiW+mFxGMrjI+V220ThWzWdHJzlxpEt3VJJG0dw4CRQuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\Src\\ThirdParty\\fna\\FNA.Core.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Src\\ThirdParty\\fna\\FNA.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
