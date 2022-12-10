@@ -211,9 +211,32 @@ namespace DesktopNotifications.Windows
         }
 #endif
 
-        private static void ToastNotificationOnFailed(ToastNotification sender, ToastFailedEventArgs args)
+        // static
+        private void ToastNotificationOnFailed(ToastNotification sender, ToastFailedEventArgs args)
         {
-            throw args.ErrorCode;
+            //RnD
+
+            // Plan A
+            //throw args.ErrorCode;
+
+            // Plan B
+            if (!_notifications.TryGetValue(sender, out var notification))
+            {
+                return;
+            }
+
+            _notifications.Remove(sender);
+
+            /*
+            NotificationDismissReason reason = args.ErrorCode switch
+            {
+                //ToastDismissalReason.UserCanceled => null,//NotificationDismissReason.User,
+                //ToastDismissalReason.TimedOut => null,//NotificationDismissReason.Expired,
+                //ToastDismissalReason.ApplicationHidden => null,//NotificationDismissReason.Application,
+                _ => throw new ArgumentOutOfRangeException()
+            };*/
+
+            NotificationDismissed?.Invoke(this, new NotificationDismissedEventArgs(notification, default/*reason*/));
         }
 
         private void ToastNotificationOnDismissed(ToastNotification sender, ToastDismissedEventArgs args)
@@ -225,7 +248,7 @@ namespace DesktopNotifications.Windows
 
             _notifications.Remove(sender);
 
-            var reason = args.Reason switch
+            NotificationDismissReason reason = args.Reason switch
             {
                 ToastDismissalReason.UserCanceled => NotificationDismissReason.User,
                 ToastDismissalReason.TimedOut => NotificationDismissReason.Expired,

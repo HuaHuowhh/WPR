@@ -1,4 +1,4 @@
-# WPR proto 3
+# WPR 0.0.4-alpha
 
 WPR is a WP7-8 XNA app runner. This is only fork of [WPR](https://github.com/8212369/WPR), not the original. 
 
@@ -12,8 +12,10 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 
 ## Screenshot(s)
 
-![Android Mobile](Images/shot1.png)
-![Windows Desktop](Images/shot2.png)
+![Android Mobile - shot](Images/shot1.png)
+![Windows Desktop - shot A](Images/shot2.png)
+![Windows Desktop - shot B](Images/shot3.png)
+![Windows Desktop - shot C](Images/shot4.png)
 
 
 ## My little RnD / experiments
@@ -21,6 +23,7 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - More installed mini-games can start now... but not all... ehhhh! )
 - RE folder deleted (Rev.Eng. phase completed)
 - Last WPR Desktop "dirty bugfixes" transferred (sync-ed) to WPR Android
+- Zuma and Earthworm Jim game running ok at now... but some artifacts still present ;)
 
     
 ## Building 
@@ -60,10 +63,10 @@ git clone --recursive https://github.com/8212369/WPR
 
 ## :: ::
 
-AS IS. No support. RnD only. DIY.
+AS IS. No support. Developers / Geeks only. "DIY mode"
 
 
 ## ::
 
-[m][e] 2022 , October
+[m][e] 2022, December
 

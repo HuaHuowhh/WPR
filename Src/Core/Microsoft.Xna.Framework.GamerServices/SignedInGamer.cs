@@ -181,7 +181,7 @@ namespace Microsoft.Xna.Framework.GamerServices
         public FriendCollection GetFriends()
         {
             //throw new NotImplementedException();
-            return default; return default;
+            return default; 
         }
 
         public bool IsFriend(Gamer gamer)
