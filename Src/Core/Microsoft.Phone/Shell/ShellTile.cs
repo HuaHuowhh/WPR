@@ -12,7 +12,14 @@ namespace Microsoft.Phone.Shell
             _ActiveTiles = new List<ShellTile>();
         }
 
-        public static IEnumerable<ShellTile> ActiveTiles => _ActiveTiles;
+        public static IEnumerable<ShellTile> ActiveTiles
+        {
+            get
+            {
+                return _ActiveTiles;
+            }
+        }
+
         public Uri NavigationUri { get; private set; }
 
         public void Update(ShellTileData data)

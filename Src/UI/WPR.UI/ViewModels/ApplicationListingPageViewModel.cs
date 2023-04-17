@@ -67,7 +67,8 @@ namespace WPR.UI.ViewModels
             }
             catch (Exception ex)
             {
-                Log.Error(LogCategory.AppList, $"Unable to query application database with exception:\n {ex}");
+                Log.Error(LogCategory.AppList, 
+                    $"Unable to query application database with exception:\n {ex}");
                 Applications = new ObservableCollection<ApplicationItemViewModel>();
             }
         }

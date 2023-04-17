@@ -30,18 +30,21 @@ namespace WPR.WindowsCompability
                 _Settings = new Dictionary<string, object>();
             } else
             {
-                using (IsolatedStorageFileStream fs = file.OpenFile(LocalSettingsName, FileMode.Open, FileAccess.Read, FileShare.Read))
+                using (IsolatedStorageFileStream fs = file.OpenFile(
+                    LocalSettingsName, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
                     using (StreamReader sr = new StreamReader(fs))
                     {
-                        DataContractSerializer reader = new DataContractSerializer(typeof(Dictionary<string, object>));
+                        DataContractSerializer reader = new DataContractSerializer(
+                            typeof(Dictionary<string, object>));
                         try
                         {
                             _Settings = (reader.ReadObject(fs) as Dictionary<string, object>)!;
                         }
                         catch (Exception ex)
                         {
-                            Log.Error(LogCategory.Common, $"Failed to deserialize isolated settings. Error\n {ex}");
+                            Log.Error(LogCategory.Common, 
+                                $"Failed to deserialize isolated settings. Error\n {ex}");
                         }
 
                         if (_Settings == null)
@@ -74,7 +77,9 @@ namespace WPR.WindowsCompability
             {
                 if (_ApplicationSettings == null)
                 {
-                    _ApplicationSettings = new IsolatedStorageSettings(IsolatedStorageFile.GetUserStoreForApplication());
+                    _ApplicationSettings = new 
+                        IsolatedStorageSettings(
+                            IsolatedStorageFile.GetUserStoreForApplication());
                 }
 
                 return _ApplicationSettings;

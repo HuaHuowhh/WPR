@@ -42,7 +42,9 @@ namespace Microsoft.Xna.Framework
 			{
 				if (value == null)
 				{
-					throw new ArgumentNullException();
+					//RnD
+					//throw new ArgumentNullException();
+					value = default;
 				}
 				INTERNAL_content = value;
 			}
@@ -240,6 +242,7 @@ namespace Microsoft.Xna.Framework
 
 		public Game()
 		{
+			//RnD
 			AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
 
 			LaunchParameters = new LaunchParameters();
@@ -337,6 +340,7 @@ namespace Microsoft.Xna.Framework
 					ContentTypeReaderManager.ClearTypeCreators();
 				}
 
+				//RnD
 				AppDomain.CurrentDomain.UnhandledException -= OnUnhandledException;
 
 				isDisposed = true;
@@ -409,14 +413,41 @@ namespace Microsoft.Xna.Framework
 				hasInitialized = true;
 			}
 
-			BeginRun();
-			BeforeLoop();
+			try
+			{
+				BeginRun();
+			}
+			catch { }
 
-			gameTimer = Stopwatch.StartNew();
-			RunLoop();
+			try
+			{
+				BeforeLoop();
+			}
+			catch { }
 
-			EndRun();
-			AfterLoop();
+			try
+			{
+				gameTimer = Stopwatch.StartNew();
+			}
+			catch { }
+
+			try
+			{
+				RunLoop();
+			}
+			catch { }
+
+			try
+			{
+				EndRun();
+			}
+			catch { }
+
+			try
+			{
+				AfterLoop();
+			}
+			catch { }
 		}
 
 		public void Tick()
@@ -1034,7 +1065,8 @@ namespace Microsoft.Xna.Framework
 		private void OnUnhandledException(
 			object sender,
 			UnhandledExceptionEventArgs args
-		) {
+		) 
+		{
 			ShowMissingRequirementMessage(args.ExceptionObject as Exception);
 		}
 

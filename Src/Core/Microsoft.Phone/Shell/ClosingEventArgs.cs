@@ -8,5 +8,24 @@ namespace Microsoft.Phone.Shell
 {
     public class ClosingEventArgs : EventArgs
     {
+        private ClosingReason _reason;
+
+        public ClosingEventArgs()
+        {
+            this._reason = ClosingReason.UserAction;
+        }
+
+        public ClosingEventArgs(ClosingReason reason)
+        {
+            this._reason = reason;
+        }
+
+        public ClosingReason Reason
+        {
+            get
+            {
+                return this._reason;
+            }
+        }
     }
 }

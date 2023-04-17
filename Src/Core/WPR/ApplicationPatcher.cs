@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Diagnostics;
 
 namespace WPR
 {
@@ -226,7 +227,8 @@ namespace WPR
                     typeof(WPR.StandardCompability.Xml.Linq.XElement2)
                 }
             };
-        }
+
+        }//ApplicationPatcher
 
         private void PatchRelaxedXmlNullableAttribTextSerialize(ModuleDefinition? module)
         {
@@ -274,24 +276,33 @@ namespace WPR
                         var actualFieldType = (field.FieldType as GenericInstanceType)!.GenericArguments[0];
 
                         // Generate holder getter/setter
-                        var getterMethod = new MethodDefinition($"get_{field.Name}SerializableHolder", MethodAttributes.Public, actualFieldType);
+                        var getterMethod = new MethodDefinition($"get_{field.Name}SerializableHolder", 
+                            MethodAttributes.Public, actualFieldType);
+
                         var getterGen = getterMethod.Body.GetILProcessor();
 
-                        var nullableRefTypeGeneric = module.ImportReference(Type.GetType("System.Nullable`1")!);
-                        var nullableRefType = nullableRefTypeGeneric.MakeGenericInstanceType(new TypeReference[] { actualFieldType });
+                        var nullableRefTypeGeneric = module.ImportReference(
+                            Type.GetType("System.Nullable`1")!);
+
+                        var nullableRefType = 
+                            nullableRefTypeGeneric.MakeGenericInstanceType(new TypeReference[]
+                            { actualFieldType });
 
                         // Emit getter
                         getterGen.Emit(OpCodes.Ldarg_0);
                         getterGen.Emit(OpCodes.Ldflda, field);
-                        getterGen.Emit(OpCodes.Call, new MethodReference("get_Value", nullableRefTypeGeneric.GenericParameters[0])
+                        getterGen.Emit(OpCodes.Call, new MethodReference("get_Value", 
+                            nullableRefTypeGeneric.GenericParameters[0])
                         {
                             HasThis = true,
                             DeclaringType = nullableRefType
                         });
+
                         getterGen.Emit(OpCodes.Ret);
 
                         // Emit setter
-                        var setterMethod = new MethodDefinition($"set_{field.Name}SerializableHolder", MethodAttributes.Public, module.TypeSystem.Void)
+                        var setterMethod = new MethodDefinition($"set_{field.Name}SerializableHolder", 
+                            MethodAttributes.Public, module.TypeSystem.Void)
                         {
                             Parameters = { new ParameterDefinition(actualFieldType) },
                             HasThis = true
@@ -300,9 +311,11 @@ namespace WPR
 
                         setterGen.Emit(OpCodes.Ldarg_0);
                         setterGen.Emit(OpCodes.Ldarg_1);
-                        setterGen.Emit(OpCodes.Newobj, new MethodReference(".ctor", module.TypeSystem.Void, nullableRefType)
+                        setterGen.Emit(OpCodes.Newobj, new MethodReference(".ctor", 
+                            module.TypeSystem.Void, nullableRefType)
                         {
-                            Parameters = { new ParameterDefinition(nullableRefTypeGeneric.GenericParameters[0]) },
+                            Parameters = { new ParameterDefinition(
+                                nullableRefTypeGeneric.GenericParameters[0]) },
                             HasThis = true
                         });
 
@@ -310,12 +323,16 @@ namespace WPR
                         setterGen.Emit(OpCodes.Ret);
 
                         // Emit skip serialize consideration
-                        var shouldSerializeMethod = new MethodDefinition($"ShouldSerialize{field.Name}SerializableHolder", MethodAttributes.Public, module.TypeSystem.Boolean);
+                        var shouldSerializeMethod = new MethodDefinition(
+                            $"ShouldSerialize{field.Name}SerializableHolder", 
+                            MethodAttributes.Public, module.TypeSystem.Boolean);
+
                         var shouldSerializeGen = shouldSerializeMethod.Body.GetILProcessor();
 
                         shouldSerializeGen.Emit(OpCodes.Ldarg_0);
                         shouldSerializeGen.Emit(OpCodes.Ldflda, field);
-                        shouldSerializeGen.Emit(OpCodes.Call, new MethodReference("HasValue", module.TypeSystem.Boolean, nullableRefType)
+                        shouldSerializeGen.Emit(OpCodes.Call, new MethodReference(
+                            "HasValue", module.TypeSystem.Boolean, nullableRefType)
                         {
                             HasThis = true
                         });
@@ -325,7 +342,8 @@ namespace WPR
                         type.Methods.Add(getterMethod);
                         type.Methods.Add(setterMethod);
 
-                        var propSeri = new PropertyDefinition($"{field.Name}SerializableHolder", PropertyAttributes.None, actualFieldType)
+                        var propSeri = new PropertyDefinition(
+                            $"{field.Name}SerializableHolder", PropertyAttributes.None, actualFieldType)
                         {
                             GetMethod = getterMethod,
                             SetMethod = setterMethod
@@ -364,9 +382,11 @@ namespace WPR
             }
         }
 
+        // PatchDll(string modulePath)
         public void PatchDll(string modulePath)
         {
             AssemblyDefinition assemblyData = AssemblyDefinition.ReadAssembly(modulePath);
+
             var module = assemblyData.MainModule;
 
             assemblyData.Name.Name = AssemblyNameStandardization.Process(assemblyData.Name.Name);
@@ -380,7 +400,8 @@ namespace WPR
             // Remove unneeded attribute (pretty sure!)
             foreach (var attrib in module.Assembly.CustomAttributes)
             {
-                if (attrib.AttributeType.FullName == "System.Runtime.CompilerServices.CodeGenerationAttribute")
+                if (attrib.AttributeType.FullName == 
+                    "System.Runtime.CompilerServices.CodeGenerationAttribute")
                 {
                     module.Assembly.CustomAttributes.Remove(attrib);
                     break;
@@ -432,8 +453,9 @@ namespace WPR
                 {
                     if (memberRef.FullName.Contains("Collect"))
                     {
-                        Console.WriteLine("TeSTING!");
+                        Debug.WriteLine("[TeSTING] memberRef.FullName.Contains : Collect");
                     }
+
                     if (memberRef.FullName == patch.Key)
                     {
                         if (typeRefPatchCache.ContainsKey(patch.Value.FullName!))
@@ -452,7 +474,8 @@ namespace WPR
             {
                 existingRef.Name = AssemblyNameStandardization.Process(existingRef.Name);
 
-                if (existingRef.FullName == "Microsoft.Xna.Framework.GamerServices.GamerServicesComponent")
+                if (existingRef.FullName 
+                    == "Microsoft.Xna.Framework.GamerServices.GamerServicesComponent")
                 {
                     existingRef.Scope = xnaGameServices;
                 }
@@ -482,16 +505,21 @@ namespace WPR
                 }
             }
 
+            // create .dll.new
             assemblyData.Write(modulePath + ".new");
             assemblyData.Dispose();
 
+            // .dll -> .dll.original
             File.Move(modulePath, modulePathNameStandardized + ".original", true);
+
+            // .dll.new - > .dll
             File.Move(modulePath + ".new", modulePathNameStandardized, true);
-        }
+        }//PatchDll
 
         public void Patch(string appRootPath, Action<int> progress, CancellationToken token)
         {
-            List<string> filenameList = Directory.EnumerateFiles(appRootPath, "*.dll", SearchOption.AllDirectories).ToList();
+            List<string> filenameList = Directory.EnumerateFiles(appRootPath, 
+                "*.dll", SearchOption.AllDirectories).ToList();
             int totalCount = filenameList.Count;
             int current = 0;
 
@@ -505,9 +533,13 @@ namespace WPR
                 try
                 {
                     PatchDll(filename);
-                } catch (Exception ex)
+                } 
+                catch (Exception ex)
                 {
-                    Common.Log.Error(Common.LogCategory.AppPatcher, $"Fail to patch DLL with path: {filename}. Error:\n{ex}");
+                    //Common.Log.Error(Common.LogCategory.AppPatcher,
+                    //$"Fail to patch DLL with path: {filename}. Error:\n{ex}");
+                    Debug.WriteLine($"Fail to patch DLL with path: {filename}. Error:\n{ex}");
+                    Debug.WriteLine($"Error Message :\n{ex.Message}");
                     continue;
                 }
 

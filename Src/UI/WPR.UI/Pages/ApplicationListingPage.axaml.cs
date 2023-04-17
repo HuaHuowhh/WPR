@@ -48,15 +48,20 @@ namespace WPR.UI.Pages
                     var InstallProgressWindow = new ProgressView();
                     InstallProgressWindow.CancelRequested += obj => ViewModel!.CancelSource!.Cancel();
 
-                    ViewModel!.InstallationSetProgress += progress => Dispatcher.UIThread.InvokeAsync(() => InstallProgressWindow.Progress = progress);
-                    ViewModel!.DeleteExistingAppInteraction!.RegisterHandler(context => Dispatcher.UIThread.InvokeAsync(async () =>
+                    ViewModel!.InstallationSetProgress += progress => Dispatcher.UIThread.InvokeAsync(()
+                        => InstallProgressWindow.Progress = progress);
+                    
+                    ViewModel!.DeleteExistingAppInteraction!.RegisterHandler(
+                        context => Dispatcher.UIThread.InvokeAsync(async () =>
                     {
                         {
                             Application app = context.Input;
 
-                            MessageBox.Avalonia.Enums.ButtonResult result = await MessageBoxUtils.GetMessageDialogResult(
+                            MessageBox.Avalonia.Enums.ButtonResult result = 
+                              await MessageBoxUtils.GetMessageDialogResult(
                                 title: Properties.Resources.ApplicationAlreadyInstalled,
-                                text: String.Format(Properties.Resources.ApplicationAlreadyInstalledDescription, app.Name),
+                                text: String.Format(
+                                    Properties.Resources.ApplicationAlreadyInstalledDescription, app.Name),
                                 icon: MessageBox.Avalonia.Enums.Icon.Question,
                                 buttons: MessageBox.Avalonia.Enums.ButtonEnum.YesNo);
 
@@ -65,34 +70,48 @@ namespace WPR.UI.Pages
                     }));
 
                     InstallProgressWindow.WhenAnyValue(v => v.IsVisible)
-                        .Subscribe(async v => {
-                            if (!v)
-                            {
-                                return;
-                            }
+                    .Subscribe
+                    (async v => 
+                    {
+                        if (!v)
+                        {
+                            return;
+                        }
 
-                            var err = await ViewModel!.InstallRequestCommand.Execute(await result[0].OpenReadAsync());
+                        var err = await ViewModel!.InstallRequestCommand.Execute(
+                            await result[0].OpenReadAsync());
                             
-                            string errUserStr = LocaleUtils.GetDisplayName(err);
-                            bool failed = err != ApplicationInstallError.None;
+                        string errUserStr = LocaleUtils.GetDisplayName(err);
+                        bool failed = err != ApplicationInstallError.None;
 
-                            await MessageBoxUtils.GetMessageDialogResult(
-                                title: failed ? Properties.Resources.InstallationFailed : Properties.Resources.InstallationSucceed,
-                                text: errUserStr,
-                                icon: failed ? MessageBox.Avalonia.Enums.Icon.Error : MessageBox.Avalonia.Enums.Icon.Success);
+                        await MessageBoxUtils.GetMessageDialogResult(
+                            title: failed ? Properties.Resources.InstallationFailed : Properties.Resources.InstallationSucceed,
+                            text: errUserStr,
+                            icon: failed ? MessageBox.Avalonia.Enums.Icon.Error : MessageBox.Avalonia.Enums.Icon.Success);
 
-                            ViewModel!.UpdateApplicationList(ViewModel!.SearchText);
+                        ViewModel!.UpdateApplicationList(ViewModel!.SearchText);
 
-                            DialogHost.DialogHost.Close(null);
-                        });
+                        DialogHost.DialogHost.Close(null);
+                    });
 
                     await DialogHost.DialogHost.Show(InstallProgressWindow);
                 }
             };
         }
 
-        Window GetWindow() => VisualRoot as Window ?? throw new NullReferenceException("Invalid Owner");
-        TopLevel GetTopLevel() => VisualRoot as TopLevel ?? throw new NullReferenceException("Invalid Owner");
-        IStorageProvider GetStorageProvider() => GetTopLevel().StorageProvider;
+        Window GetWindow()
+        {
+            return VisualRoot as Window ?? throw new NullReferenceException("Invalid Owner");
+        }
+
+        TopLevel GetTopLevel()
+        {
+            return VisualRoot as TopLevel ?? throw new NullReferenceException("Invalid Owner");
+        }
+
+        IStorageProvider GetStorageProvider()
+        {
+            return GetTopLevel().StorageProvider;
+        }
     }
 }

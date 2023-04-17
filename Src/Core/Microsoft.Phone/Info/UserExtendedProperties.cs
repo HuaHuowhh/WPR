@@ -8,7 +8,9 @@ namespace Microsoft.Phone.Info
         {
             if (propertyName == null)
             {
-                throw new ArgumentNullException("Null property name in retrieving user extended properties' value!");
+                //throw new ArgumentNullException(
+                //    "Null property name in retrieving user extended properties' value!");
+                return default; // RnD
             }
 
             switch (propertyName)
@@ -17,7 +19,8 @@ namespace Microsoft.Phone.Info
                     return "123456789";
 
                 default:
-                    throw new ArgumentException("Unknown property name!");
+                    //throw new ArgumentException("Unknown property name!");
+                    return default; // RnD
             }
         }
 
@@ -25,7 +28,9 @@ namespace Microsoft.Phone.Info
         {
             if (propertyName == null)
             {
-                throw new ArgumentNullException("Null property name in retrieving user extended properties' value!");
+                //throw new ArgumentNullException(
+                //    "Null property name in retrieving user extended properties' value!");
+                propertyName = default; //RnD
             }
 
             propertyValue = null;
@@ -33,7 +38,8 @@ namespace Microsoft.Phone.Info
             try
             {
                 propertyValue = GetValue(propertyName);
-            } catch
+            } 
+            catch
             {
                 return false;
             }

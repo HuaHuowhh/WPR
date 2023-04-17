@@ -18,18 +18,27 @@ namespace WPR
 {
     public static class ApplicationLaunch
     {
-        private static string CurrentProductFolder => Path.Combine(Configuration.Current.DataPath(Application.DataStoreFolder),
-            WindowsCompability.Application.Current!.ProductId!);
+        private static string CurrentProductFolder
+        {
+            get
+            {
+                return Path.Combine(
+                    Configuration.Current.DataPath(Application.DataStoreFolder),
+                              WindowsCompability.Application.Current!.ProductId!);
+            }
+        }
 
         static ApplicationLaunch()
         {
             AssemblyLoadContext.Default.Resolving += (loadContext, name) =>
             {
-                return loadContext.LoadFromAssemblyPath(Path.Combine(CurrentProductFolder, name.Name + ".dll"));
+                return loadContext.LoadFromAssemblyPath(
+                    Path.Combine(CurrentProductFolder, name.Name + ".dll"));
             };
         }
 
-        public static async Task Start(Application app, Action<DisplayOrientation>? requestOrientation = null)
+        public static async Task Start(
+            Application app, Action<DisplayOrientation>? requestOrientation = null)
         {
             if (app.ApplicationType != ApplicationType.XNA)
             {
@@ -43,29 +52,39 @@ namespace WPR
             FNAPlatform.TitleLocation = folderPath;
             string curDir = Directory.GetCurrentDirectory();
 
-            Assembly assem = AssemblyLoadContext.Default.LoadFromAssemblyPath(Path.Combine(folderPath, AssemblyNameStandardization.Process(app.Assembly)));
+            Assembly assem = AssemblyLoadContext.Default.LoadFromAssemblyPath(
+                Path.Combine(folderPath, AssemblyNameStandardization.Process(app.Assembly)));
 
             Directory.SetCurrentDirectory(folderPath);
 
             // Instatiate
-            Type? mainType = assem.GetType(app.EntryPoint);
+            //Type? mainType = assem.GetType(app.EntryPoint);
+            Type mainType = assem.GetType(app.EntryPoint);
 
             // Run on separate thread to not affect the UI
-            await Task.Run(() =>
+            //await Task.Run(() =>
+            //{
+            //using (Game? obj = Activator.CreateInstance(mainType!) as Game)
+            using (Game obj = Activator.CreateInstance(mainType) as Game)
             {
-                using (Game? obj = Activator.CreateInstance(mainType!) as Game)
-                {
-                    obj!.IsMouseVisible = true;
-                    obj!.Window.Title = $"{app.Name} - {app.Author} (Publisher: {app.Publisher})";
+                //obj!.IsMouseVisible = true;
+                obj.IsMouseVisible = true;
+
+                //obj!.Window.Title = 
+                //      $"{app.Name} - {app.Author} (Publisher: {app.Publisher})";
+                obj.Window.Title = "WPR";
 
 #if !__MOBILE__
                     TouchPanel.MouseAsTouch = true;
 #endif
-                    TouchPanel.EnabledGestures = GestureType.DoubleTap | GestureType.Tap | GestureType.Hold |
+                    TouchPanel.EnabledGestures = GestureType.DoubleTap | GestureType.Tap 
+                    | GestureType.Hold |
                         GestureType.HorizontalDrag | GestureType.VerticalDrag | GestureType.FreeDrag |
-                        GestureType.Pinch | GestureType.Flick | GestureType.DragComplete | GestureType.PinchComplete;
+                        GestureType.Pinch | GestureType.Flick | GestureType.DragComplete 
+                       | GestureType.PinchComplete;
 
                     GraphicsDeviceManager2.RequestOrientation = requestOrientation;
+                
                     SignedInGamer.Reset();
 
                     obj.Activated += (obj, args) =>
@@ -73,7 +92,10 @@ namespace WPR
                         PhoneApplicationService.Current!.HandleApplicationStart(true);
                     };
 
-                    GraphicsDeviceManager? manager = obj.Services.GetService(typeof(IGraphicsDeviceManager)) as GraphicsDeviceManager;
+                    //GraphicsDeviceManager? manager = obj.Services.GetService(
+                    GraphicsDeviceManager manager = obj.Services.GetService(
+                        typeof(IGraphicsDeviceManager)) as GraphicsDeviceManager;
+
                     if (manager != null)
                     {
                         manager.PreparingDeviceSettings += (obj, args) =>
@@ -115,7 +137,7 @@ namespace WPR
                         Debug.WriteLine($"[ex] obj.Exit ex. : {ex.Message}");
                     }
                 }
-            });
+            //});
         }
     }
 }

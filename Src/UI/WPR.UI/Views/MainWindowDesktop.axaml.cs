@@ -2,6 +2,7 @@ using Avalonia.Controls;
 using System;
 using WPR.Common;
 using WPR.Models;
+using System.Diagnostics;
 
 using Newtonsoft.Json;
 
@@ -33,7 +34,10 @@ namespace WPR.UI.Views
                 bool runOk = true;
 
                 var test = JsonConvert.SerializeObject(args.Target);
-                Console.WriteLine(test);
+                Debug.WriteLine("[i] " + test);
+
+                string ErrorMessage = "";
+                string StackTrace = "";
 
                 try
                 {
@@ -42,6 +46,14 @@ namespace WPR.UI.Views
                 catch (Exception ex)
                 {
                     Log.Error(LogCategory.AppList, $"Game run error: \n{ex}");
+
+                    Debug.WriteLine($"Game run error: \n{ex}");
+                    Debug.WriteLine($"Error message: \n{ex.Message}");
+
+                    StackTrace = ex.ToString();
+                    ErrorMessage = ex.Message;
+                    
+                    //RnD
                     runOk = false;
                 }
 
@@ -50,15 +62,17 @@ namespace WPR.UI.Views
                 if (!runOk)
                 {
                     await MessageBoxUtils.GetMessageDialogResult(
-                        title: Properties.Resources.AppRunError,
-                        text: Properties.Resources.ExceptionRunApp,
+                        title: Properties.Resources.AppRunError + " ("+ ErrorMessage+")",
+                        text: Properties.Resources.ExceptionRunApp + ". StackTrace: "+StackTrace,
                         icon: MessageBox.Avalonia.Enums.Icon.Error);
                 }
             };
 #endif
 
+
             _Navigator = new MainViewNavigator();
-            _Navigator.SetupNavigation(this.Get<TabControl>("navigationControl"), this.Get<TransitioningContentControl>("contentControl"));
+            _Navigator.SetupNavigation(this.Get<TabControl>("navigationControl"), 
+                this.Get<TransitioningContentControl>("contentControl"));
         }
     }
 }

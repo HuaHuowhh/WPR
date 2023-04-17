@@ -21,6 +21,7 @@ namespace Microsoft.Devices
 
         public void Start(TimeSpan duration)
         {
+
         }
 
         public void Stop()
