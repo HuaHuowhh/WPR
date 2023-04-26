@@ -225,7 +225,12 @@ namespace WPR
                 {
                     "System.Xml.Linq.XElement System.Xml.Linq.XElement::Load(System.String)",
                     typeof(WPR.StandardCompability.Xml.Linq.XElement2)
-                }
+                },
+               // {
+               //     //WARNING: Experimental!!! Remove it if game fails!!!!
+               //     "System.Windows.Media.Imaging System.Windows.Media.Imaging::WritableBitmap(System.String)",
+               //     typeof(WPR.WindowsCompability.WritableBitmap)
+               // },
             };
 
         }//ApplicationPatcher
@@ -367,14 +372,18 @@ namespace WPR
                         }
                         else
                         {
-                            var attributeType = (xmlNonNullableProp.AttributeType.FullName == typeof(XmlAttributeAttribute).FullName)
-                                    ? typeof(XmlAttributeAttribute) : typeof(XmlTextAttribute);
+                            var attributeType = (xmlNonNullableProp.AttributeType.FullName 
+                                == typeof(XmlAttributeAttribute).FullName)
+                                    ? typeof(XmlAttributeAttribute) 
+                                    : typeof(XmlTextAttribute);
 
                             MethodReference methodConstructor = module.ImportReference(attributeType
                                 .GetConstructor(new Type[] { typeof(String) }));
+                            
                             propSeri.CustomAttributes.Add(new CustomAttribute(methodConstructor)
                             {
-                                ConstructorArguments = { new CustomAttributeArgument(module.TypeSystem.String, field.Name) }
+                                ConstructorArguments = { 
+                                    new CustomAttributeArgument(module.TypeSystem.String, field.Name) }
                             });
                         }
                     }
@@ -385,14 +394,17 @@ namespace WPR
         // PatchDll(string modulePath)
         public void PatchDll(string modulePath)
         {
-            AssemblyDefinition assemblyData = AssemblyDefinition.ReadAssembly(modulePath);
+            // ReadAssembly
+            AssemblyDefinition assemblyData = 
+                Mono.Cecil.AssemblyDefinition.ReadAssembly(modulePath);
 
-            var module = assemblyData.MainModule;
+            Mono.Cecil.ModuleDefinition module = assemblyData.MainModule;
 
             assemblyData.Name.Name = AssemblyNameStandardization.Process(assemblyData.Name.Name);
 
             string modulePathNameStandardized = Path.Combine(Path.GetDirectoryName(modulePath)!,
-                AssemblyNameStandardization.Process(Path.GetFileNameWithoutExtension(modulePath)) +
+                AssemblyNameStandardization.Process(
+                    Path.GetFileNameWithoutExtension(modulePath)) +
                 Path.GetExtension(modulePath));
 
             AssemblyNameReference? xnaGameServices = null;
@@ -422,13 +434,16 @@ namespace WPR
                         refer.Version = FNARef.Version;
                         refer.PublicKey = FNARef.PublicKey;
                     }
-                } else if (refer.Name.Equals("mscorlib.Extensions", StringComparison.OrdinalIgnoreCase))
+                } 
+                else if (refer.Name.Equals("mscorlib.Extensions", 
+                    StringComparison.OrdinalIgnoreCase))
                 {
                     refer.Name = SystemRunTimeRef.Name;
                     refer.Version = SystemRunTimeRef.Version;
                     refer.PublicKey = SystemRunTimeRef.PublicKey;
                 }
-                else if (refer.Name.Equals("System.ServiceModel", StringComparison.OrdinalIgnoreCase))
+                else if (refer.Name.Equals("System.ServiceModel", 
+                    StringComparison.OrdinalIgnoreCase))
                 {
                     refer.Name = ServiceModelPrimitivesRef.Name;
                     refer.Version = ServiceModelPrimitivesRef.Version;
@@ -445,7 +460,8 @@ namespace WPR
             module.AssemblyReferences.Add(ServiceModelHTTPRef);
             module.AssemblyReferences.Add(StandardCompRef);
 
-            Dictionary<string, TypeReference> typeRefPatchCache = new Dictionary<string, TypeReference>();
+            Dictionary<string, TypeReference> typeRefPatchCache 
+                = new Dictionary<string, TypeReference>();
 
             foreach (var memberRef in module.GetMemberReferences())
             {
@@ -453,7 +469,7 @@ namespace WPR
                 {
                     if (memberRef.FullName.Contains("Collect"))
                     {
-                        Debug.WriteLine("[TeSTING] memberRef.FullName.Contains : Collect");
+                        //Debug.WriteLine("[TeSTING] memberRef.FullName.Contains : Collect");
                     }
 
                     if (memberRef.FullName == patch.Key)
@@ -461,7 +477,8 @@ namespace WPR
                         if (typeRefPatchCache.ContainsKey(patch.Value.FullName!))
                         {
                             memberRef.DeclaringType = typeRefPatchCache[patch.Value.FullName!];
-                        } else
+                        } 
+                        else
                         {
                             memberRef.DeclaringType = module.ImportReference(patch.Value);
                             typeRefPatchCache.Add(patch.Value.FullName!, memberRef.DeclaringType);
@@ -533,6 +550,7 @@ namespace WPR
                 try
                 {
                     PatchDll(filename);
+                    Debug.WriteLine($"[i] Patching DLL with path: {filename}.\n");
                 } 
                 catch (Exception ex)
                 {

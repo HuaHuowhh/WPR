@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 #if __ANDROID__
@@ -12,7 +13,8 @@ namespace WPR.Common
 {
     public static class ImageUtils
     {
-        public static List<String> SplitAndSave(string storePath, string filenameFormat, Stream originalImageStream,
+        public static List<String> SplitAndSave(string storePath, string filenameFormat, 
+            Stream originalImageStream,
             int rowCount, int columnCount)
         {
 #if __ANDROID__
@@ -26,17 +28,21 @@ namespace WPR.Common
             int tileSizeY = originalBitmap.Height / rowCount;
 
             List<string> pathList = new List<string>();
+
             Directory.CreateDirectory(storePath);
 
             for (int i = 0; i < rowCount; i++)
             {
                 for (int j = 0; j < columnCount; j++)
                 {
-                    string imagePath = System.IO.Path.Combine(storePath, String.Format(filenameFormat, i, j));
+                    string imagePath = System.IO.Path.Combine(storePath, 
+                        String.Format(filenameFormat, i, j));
 
-                    Bitmap? tempBitmap = Bitmap.CreateBitmap(originalBitmap, j * tileSizeX, i * tileSizeY, tileSizeX, tileSizeY);
+                    Bitmap? tempBitmap = Bitmap.CreateBitmap(originalBitmap, 
+                        j * tileSizeX, i * tileSizeY, tileSizeX, tileSizeY);
                     if (tempBitmap == null)
                     {
+                        Debug.WriteLine("Can't create splitted bitmap on Android!");
                         Log.Error(LogCategory.Common, "Can't create splitted bitmap on Android!");
                         return pathList;
                     }
@@ -56,7 +62,8 @@ namespace WPR.Common
             int tileSizeX = originalImage.Width / columnCount;
             int tileSizeY = originalImage.Height / rowCount;
 
-            Bitmap img = new Bitmap(tileSizeX, tileSizeY, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            Bitmap img = new Bitmap(tileSizeX, tileSizeY, 
+            System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             var graphicsDrawer = System.Drawing.Graphics.FromImage(img);
 
             Directory.CreateDirectory(storePath);
@@ -72,7 +79,8 @@ namespace WPR.Common
                     graphicsDrawer.Clear(System.Drawing.Color.Transparent);
                     graphicsDrawer.DrawImage(originalImage,
                         new System.Drawing.Rectangle(0, 0, tileSizeX, tileSizeY),
-                        new System.Drawing.Rectangle(j * tileSizeX, i * tileSizeY, tileSizeX, tileSizeY),
+                        new System.Drawing.Rectangle(j * tileSizeX, i * tileSizeY, 
+                        tileSizeX, tileSizeY),
                         GraphicsUnit.Pixel);
 
                     img.Save(imagePath, System.Drawing.Imaging.ImageFormat.Png);

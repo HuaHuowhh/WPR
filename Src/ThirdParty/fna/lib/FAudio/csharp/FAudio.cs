@@ -25,7 +25,9 @@
  */
 
 #region Using Statements
+using Microsoft.Xna.Framework.Media;
 using System;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 #endregion
@@ -2141,7 +2143,17 @@ public static class FAudio
 	{
 		int utf8BufSize = Utf8Size(name);
 		byte* utf8Buf = stackalloc byte[utf8BufSize];
-		return XNA_PlaySong(Utf8Encode(name, utf8Buf, utf8BufSize));
+		float song = default;
+
+		try
+		{
+			song = XNA_PlaySong(Utf8Encode(name, utf8Buf, utf8BufSize));
+		}
+		catch (Exception ex)
+		{
+			Debug.WriteLine("XNA_PlaySong ex: " + ex.Message);
+		}
+        return song;
 	}
 
 	[DllImport(nativeLibName, CallingConvention = CallingConvention.Cdecl)]

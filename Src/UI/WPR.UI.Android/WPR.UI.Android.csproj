@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0-android</TargetFramework>
+    <TargetFramework>net6.0-android31.0</TargetFramework>
     <AvaloniaVersion>11.0.999-cibuild0023504-beta</AvaloniaVersion>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>

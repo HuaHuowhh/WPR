@@ -758,7 +758,14 @@ namespace Microsoft.Xna.Framework
 			{
 				if (updateable.Enabled)
 				{
-					updateable.Update(gameTime);
+					try
+					{
+						updateable.Update(gameTime);
+					}
+					catch (Exception ex)
+				    {
+						Debug.WriteLine("updateable.Update ex.: " + ex.Message);
+					}
 				}
 			}
 			currentlyUpdatingComponents.Clear();

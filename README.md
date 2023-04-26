@@ -1,4 +1,4 @@
-# WPR 0.0.4-alpha
+# WPR 0.0.1-proto4  (alpha stage, not for share; dev only)
 
 WPR is a WP7-8 XNA app runner. This is only fork of [WPR](https://github.com/8212369/WPR), not the original. 
 
@@ -12,10 +12,8 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 
 ## Screenshot(s)
 
-![Android Mobile - shot](Images/shot1.png)
-![Windows Desktop - shot A](Images/shot2.png)
-![Windows Desktop - shot B](Images/shot3.png)
-![Windows Desktop - shot C](Images/shot4.png)
+![](Images/monkey.png)
+
 
 
 ## My little RnD / experiments

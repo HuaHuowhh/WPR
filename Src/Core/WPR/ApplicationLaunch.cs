@@ -32,17 +32,32 @@ namespace WPR
         {
             AssemblyLoadContext.Default.Resolving += (loadContext, name) =>
             {
-                return loadContext.LoadFromAssemblyPath(
-                    Path.Combine(CurrentProductFolder, name.Name + ".dll"));
+                Assembly path = default;
+
+                try
+                {
+                    path = loadContext.LoadFromAssemblyPath(
+                        Path.Combine(CurrentProductFolder, name.Name + ".dll"));
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("loadContext.LoadFromAssemblyPath ex.: " + ex.Message);
+                }
+
+                return path;
+
             };
         }
 
-        public static async Task Start(
-            Application app, Action<DisplayOrientation>? requestOrientation = null)
+        public static async Task Start
+        (
+            Application app, Action<DisplayOrientation>? requestOrientation = null
+        )
         {
             if (app.ApplicationType != ApplicationType.XNA)
             {
-                throw new NotSupportedException("Only XNA app is supported!");
+                //throw new NotSupportedException("Only XNA app is supported!");
+                Debug.WriteLine("[warn] Only XNA app is supported!");
             }
 
             // Setting game folder path
@@ -100,15 +115,17 @@ namespace WPR
                     {
                         manager.PreparingDeviceSettings += (obj, args) =>
                         {
-                            GraphicsDeviceManager2.RequestOrientationChange(
-                                args.GraphicsDeviceInformation.PresentationParameters.BackBufferWidth,
-                                args.GraphicsDeviceInformation.PresentationParameters.BackBufferHeight
+                            GraphicsDeviceManager2.RequestOrientationChange
+                            (
+                                args.GraphicsDeviceInformation
+                                   .PresentationParameters.BackBufferWidth,
+                                args.GraphicsDeviceInformation
+                                   .PresentationParameters.BackBufferHeight
                             );
                         };
                     }
 
                     
-
                     try
                     {
                         obj.Run();
