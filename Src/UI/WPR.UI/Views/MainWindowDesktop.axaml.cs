@@ -16,8 +16,11 @@ namespace WPR.UI.Views
         {
             InitializeComponent();
 
+//RnD
+#if (true)//!__MOBILE__
 #if !__MOBILE__
             MessageBoxUtils.MainWindow = this;
+#endif
             ServicesSetup.Start();
 
             ApplicationLaunchRequest.Incoming += async (sender, args) =>
@@ -47,7 +50,7 @@ namespace WPR.UI.Views
                 {
                     Log.Error(LogCategory.AppList, $"Game run error: \n{ex}");
 
-                    Debug.WriteLine($"Game run error: \n{ex}");
+                    Debug.WriteLine($"[ex] Game run error: \n{ex}");
                     Debug.WriteLine($"Error message: \n{ex.Message}");
 
                     StackTrace = ex.ToString();

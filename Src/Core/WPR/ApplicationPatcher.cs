@@ -402,8 +402,9 @@ namespace WPR
 
             assemblyData.Name.Name = AssemblyNameStandardization.Process(assemblyData.Name.Name);
 
-            string modulePathNameStandardized = Path.Combine(Path.GetDirectoryName(modulePath)!,
-                AssemblyNameStandardization.Process(
+            string modulePathNameStandardized = Path.Combine(
+                Path.GetDirectoryName(modulePath)!,
+               AssemblyNameStandardization.Process(
                     Path.GetFileNameWithoutExtension(modulePath)) +
                 Path.GetExtension(modulePath));
 
@@ -420,6 +421,7 @@ namespace WPR
                 }
             }
 
+            // module.AssemblyReferences cycle 
             foreach (var refer in module.AssemblyReferences)
             {
                 if (refer.Name.Contains("Microsoft.Xna"))
@@ -451,8 +453,10 @@ namespace WPR
                 }
             }
 
+            //RnD
             PatchRelaxedXmlNullableAttribTextSerialize(module);
 
+            // Add AssemblyReferences
             module.AssemblyReferences.Add(FNACompRef);
             module.AssemblyReferences.Add(WindowsCompRef);
             module.AssemblyReferences.Add(SystemRunTimeRef);
@@ -460,17 +464,30 @@ namespace WPR
             module.AssemblyReferences.Add(ServiceModelHTTPRef);
             module.AssemblyReferences.Add(StandardCompRef);
 
+            // create Ref. Patch Cache
             Dictionary<string, TypeReference> typeRefPatchCache 
                 = new Dictionary<string, TypeReference>();
 
+            // module.GetMemberReferences cycle
             foreach (var memberRef in module.GetMemberReferences())
             {
+                if (memberRef.FullName.Contains("Collect"))
+                {
+                    //Debug.WriteLine("[TeSTING] memberRef.FullName.Contains : Collect");
+                    Debug.WriteLine("[Collect] memberRef fullname: "
+                        + memberRef.FullName);
+                }
+
                 foreach (var patch in MemberPatches)
                 {
+                    /*
                     if (memberRef.FullName.Contains("Collect"))
                     {
                         //Debug.WriteLine("[TeSTING] memberRef.FullName.Contains : Collect");
+                        Debug.WriteLine("[TeSTING] memberRef.FullName Contains Collect: " 
+                            + memberRef.FullName);
                     }
+                    */
 
                     if (memberRef.FullName == patch.Key)
                     {
@@ -487,6 +504,7 @@ namespace WPR
                 }
             }
 
+            // cycle existing refs...
             foreach (var existingRef in module.GetTypeReferences())
             {
                 existingRef.Name = AssemblyNameStandardization.Process(existingRef.Name);
@@ -520,10 +538,23 @@ namespace WPR
                         }
                     }
                 }
-            }
+            }//for...
+            
 
             // create .dll.new
-            assemblyData.Write(modulePath + ".new");
+            try
+            {
+                assemblyData.Write(modulePath + ".new");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] assemblyData.Write : " + ex.Message);
+                Debug.WriteLine("[error] " + modulePath + "can't patch normally :(");
+
+                assemblyData.Dispose();
+                return;
+            }
+
             assemblyData.Dispose();
 
             // .dll -> .dll.original

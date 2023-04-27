@@ -85,9 +85,9 @@ namespace WPR
                 //obj!.IsMouseVisible = true;
                 obj.IsMouseVisible = true;
 
-                //obj!.Window.Title = 
-                //      $"{app.Name} - {app.Author} (Publisher: {app.Publisher})";
-                obj.Window.Title = "WPR";
+                obj!.Window.Title =
+                      $"WPR - {app.Name}";// - {app.Author} (Publisher: {app.Publisher})";
+                //obj.Window.Title = "WPR";
 
 #if !__MOBILE__
                     TouchPanel.MouseAsTouch = true;

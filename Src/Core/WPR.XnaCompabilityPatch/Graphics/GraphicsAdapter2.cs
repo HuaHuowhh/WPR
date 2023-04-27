@@ -18,6 +18,7 @@ namespace WPR.XnaCompability.Graphics
         {
             //return new DisplayMode(480, 800, CurrentDisplayMode.Format);
             return new DisplayMode(800, 600, CurrentDisplayMode.Format);
+            //return new DisplayMode(640, 480, CurrentDisplayMode.Format);
         }
     }
 }

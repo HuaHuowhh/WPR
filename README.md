@@ -1,25 +1,30 @@
-# WPR 0.0.1-proto4  (alpha stage, not for share; dev only)
+# WPR 0.0.5-alpha :: DEVELOPER EDITION ::
 
 WPR is a WP7-8 XNA app runner. This is only fork of [WPR](https://github.com/8212369/WPR), not the original. 
 
-This is only my little "Avalonia Android/Desktop framework" research + micro-development (or re-development?))))
+This is only my little "Avalonia Android/Desktop framework" research + micro-development (or re-development?)))
 
-## Features
+## "User" Features
 
 - Installing WP7-8 **decrypted** XNA XAPs locally on your machine. Most encripted XAP files are unusable :(
 - Earning achievements locally for Xbox Live games, with a pop-up appear everytime achievement is unlocked. :)
 
+## "Dev" Features
+- Extended error logging
+- Some code stability improved 
 
 ## Screenshot(s)
 
+![](Images/intro.png)
+![](Images/jetcarstunts.png)
 ![](Images/monkey.png)
-
+![](Images/pac-man.png)
+![](Images/outro.png)
 
 
 ## My little RnD / experiments
 
 - More installed mini-games can start now... but not all... ehhhh! )
-- RE folder deleted (Rev.Eng. phase completed)
 - Last WPR Desktop "dirty bugfixes" transferred (sync-ed) to WPR Android
 - Zuma and Earthworm Jim game running ok at now... but some artifacts still present ;)
 
@@ -51,6 +56,8 @@ git clone --recursive https://github.com/8212369/WPR
 
 - Stabilize app running
 - Add XBOX Live "emulation" to XNA
+- Fix Butterfly patching
+- Fix FeelMeOil & Contre Jour (and other similar games) running because of only "start screen" appearing at now 
 - ? (idk what is in your brave mind))  
     
 ## This runner existence :: words from the [author/owner/main developer](https://github.com/8212369/) 

@@ -18,15 +18,25 @@ namespace Microsoft.Phone.Info
                     return "WPRunner";
 
                 case "DeviceName":
-                    return "WPRunner 2022";
+                    return "WPRunner 2023";
 
                 case "DeviceFirmwareVersion":
                 case "DeviceHardwareVersion":
                     return "8.0.0";
 
                 case "DeviceTotalMemory":
+
                     // Return 2GB RAM
-                    return 2048L * 1024 * 1024;
+                    return 2048L * 1024 * 1024; 
+
+                case "ApplicationMemoryLimit":
+
+                    // Return 512MB RAM //2GB RAM
+                    return 512L * 1024 * 1024; 
+
+                case "ApplicationWorkingSetLimit":
+                    // Return 1GB RAM
+                    return 1024L * 1024 * 1024; 
 
                 default:
                     return null;
