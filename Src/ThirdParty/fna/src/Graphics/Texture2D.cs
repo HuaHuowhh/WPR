@@ -74,10 +74,8 @@ namespace Microsoft.Xna.Framework.Graphics
 			//RnD
 			//if (format != SurfaceFormat.Color)
 			//{
-			// 800
-			//	if (width > 640) 
+			//	if (width > 640) //800
 			//		width = 640;
-
 			//	if (height > 480) 
 			//		width = 480;
 			//}
@@ -125,18 +123,20 @@ namespace Microsoft.Xna.Framework.Graphics
 			{
 				//Experimental! RnD / TEMP
 
-				//if (format != SurfaceFormat.Color)
-				//{
-				//format = SurfaceFormat.Color;//NormalizedByte2;
-				//}
+				
 
 				if (format == SurfaceFormat.Bgra4444)
 				{
                     format = SurfaceFormat.Color;
                 }
 
-				//TEST: Low-memory devices
-				//format = SurfaceFormat.Dxt5;
+                //if (format != SurfaceFormat.Color)
+                //{
+                //format = SurfaceFormat.NormalizedByte2;
+                //}
+
+                //TEST: Low-memory devices
+                //format = SurfaceFormat.Dxt5;
 
                 Format = format;
             }

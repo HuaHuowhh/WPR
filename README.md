@@ -12,10 +12,12 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 ## "Dev" Features
 - Extended error logging
 - Some code stability improved 
+- System.Security.Cryptography "emulation" added (I noticed it needed for Countre Jour game...)
 
 ## Screenshot(s)
 
 ![](Images/intro.png)
+![](Images/contrejour.png)
 ![](Images/jetcarstunts.png)
 ![](Images/monkey.png)
 ![](Images/pac-man.png)

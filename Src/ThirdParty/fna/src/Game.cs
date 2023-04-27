@@ -417,25 +417,37 @@ namespace Microsoft.Xna.Framework
 			{
 				BeginRun();
 			}
-			catch { }
+			catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] Game - BeginRun ex: " + ex.Message);
+            }
 
 			try
 			{
 				BeforeLoop();
 			}
-			catch { }
+			catch (Exception ex)
+			{
+				Debug.WriteLine("[ex] Game - BeforeLoop ex: " + ex.Message);
+			}
 
 			try
 			{
 				gameTimer = Stopwatch.StartNew();
 			}
-			catch { }
+			catch (Exception ex) 
+			{
+                Debug.WriteLine("[ex] Game - StartNow ex: " + ex.Message);
+            }
 
 			try
 			{
 				RunLoop();
 			}
-			catch { }
+			catch (Exception ex)
+			{
+                Debug.WriteLine("[ex] Game - RunLoop ex: " + ex.Message);
+            }
 
 			try
 			{

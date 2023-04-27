@@ -24,6 +24,7 @@ namespace WPR
         private AssemblyNameReference StandardCompRef;
         private AssemblyNameReference ServiceModelPrimitivesRef;
         private AssemblyNameReference ServiceModelHTTPRef;
+        private AssemblyNameReference SystemSecurityCryptographyRef; //!
 
         private class TypePatchInfo
         {
@@ -44,6 +45,11 @@ namespace WPR
             ServiceModelPrimitivesRef = AssemblyNameReference.Parse("System.ServiceModel.Primitives");
             ServiceModelHTTPRef = AssemblyNameReference.Parse("System.ServiceModel.Http");
             StandardCompRef = AssemblyNameReference.Parse("WPR.StandardCompability");
+
+            //SystemSecurityCryptographyRef = AssemblyNameReference.Parse(
+            //    "System.Security.Cryptography.ProtectedData");//! 
+            SystemSecurityCryptographyRef = AssemblyNameReference.Parse(
+                "WPR.WindowsCompability");//!
 
             Patches = new Dictionary<string, TypePatchInfo>()
             {
@@ -175,6 +181,13 @@ namespace WPR
                     Reference = ServiceModelHTTPRef
                 }
                 },
+                //!
+                { "System.Security.Cryptography.ProtectedData", new TypePatchInfo()
+                {
+                    Reference = SystemSecurityCryptographyRef,
+                    NewNamespace = "WPR.WindowsCompability"
+                }
+                },
                 { "System.Windows.MessageBox", new TypePatchInfo()
                 {
                     Reference = WindowsCompRef
@@ -194,6 +207,17 @@ namespace WPR
 
             MemberPatches = new Dictionary<string, Type>
             {
+                //!
+                {
+                    "System.Byte[] System.Security.Cryptography.ProtectData::Protect(System.Byte[],System.Byte[])",
+                    typeof(WPR.WindowsCompability.ProtectedData)//Cryptography)
+                },
+                 //!
+                {
+                    "System.Byte[] System.Security.Cryptography.ProtectData::Unprotect(System.Byte[],System.Byte[])",
+                    typeof(WPR.WindowsCompability.ProtectedData)//.Cryptography)
+                },
+
                 {
                     "System.Type System.Type::GetType(System.String,System.Boolean)",
                     typeof(WPR.WindowsCompability.Type2)
@@ -463,6 +487,7 @@ namespace WPR
             module.AssemblyReferences.Add(ServiceModelPrimitivesRef);
             module.AssemblyReferences.Add(ServiceModelHTTPRef);
             module.AssemblyReferences.Add(StandardCompRef);
+            module.AssemblyReferences.Add(SystemSecurityCryptographyRef);//!
 
             // create Ref. Patch Cache
             Dictionary<string, TypeReference> typeRefPatchCache 
@@ -471,12 +496,11 @@ namespace WPR
             // module.GetMemberReferences cycle
             foreach (var memberRef in module.GetMemberReferences())
             {
-                if (memberRef.FullName.Contains("Collect"))
-                {
-                    //Debug.WriteLine("[TeSTING] memberRef.FullName.Contains : Collect");
-                    Debug.WriteLine("[Collect] memberRef fullname: "
-                        + memberRef.FullName);
-                }
+                //if (memberRef.FullName.Contains("Collect"))
+                //{
+                //    Debug.WriteLine("[Collect] memberRef fullname: "
+                //        + memberRef.FullName);
+                //}
 
                 foreach (var patch in MemberPatches)
                 {
