@@ -41,7 +41,7 @@ namespace WPR
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine("loadContext.LoadFromAssemblyPath ex.: " + ex.Message);
+                    //Debug.WriteLine("[warn] loadContext.LoadFromAssemblyPath ex.: " + ex.Message);
                 }
 
                 return path;

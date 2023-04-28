@@ -782,7 +782,7 @@ namespace Microsoft.Xna.Framework
 					}
 					catch (Exception ex)
 				    {
-						Debug.WriteLine("updateable.Update ex.: " + ex.Message);
+						Debug.WriteLine("[ex] ComponentsUpdate ex.: " + ex.Message);
 						throw;
 					}
 				}

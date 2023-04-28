@@ -10,13 +10,14 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - Earning achievements locally for Xbox Live games, with a pop-up appear everytime achievement is unlocked. :)
 
 ## "Dev" Features
-- Extended error logging
+- Extended error logging (sorry, there an no any "Dev UI" switch-offs at now!)
 - Some code stability improved 
 - System.Security.Cryptography "emulation" added (I noticed it needed for Countre Jour game...)
 
 ## Screenshot(s)
 
 ![](Images/intro.png)
+![](Images/kinectimals.png)
 ![](Images/contrejour.png)
 ![](Images/jetcarstunts.png)
 ![](Images/monkey.png)
