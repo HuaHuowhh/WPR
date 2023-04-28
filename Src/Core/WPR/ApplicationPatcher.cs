@@ -25,6 +25,7 @@ namespace WPR
         private AssemblyNameReference ServiceModelPrimitivesRef;
         private AssemblyNameReference ServiceModelHTTPRef;
         private AssemblyNameReference SystemSecurityCryptographyRef; //!
+        private AssemblyNameReference SystemWindowsMediaImagingRef; //!
 
         private class TypePatchInfo
         {
@@ -46,9 +47,10 @@ namespace WPR
             ServiceModelHTTPRef = AssemblyNameReference.Parse("System.ServiceModel.Http");
             StandardCompRef = AssemblyNameReference.Parse("WPR.StandardCompability");
 
-            //SystemSecurityCryptographyRef = AssemblyNameReference.Parse(
-            //    "System.Security.Cryptography.ProtectedData");//! 
             SystemSecurityCryptographyRef = AssemblyNameReference.Parse(
+                "WPR.WindowsCompability");//!
+
+            SystemWindowsMediaImagingRef =  AssemblyNameReference.Parse(
                 "WPR.WindowsCompability");//!
 
             Patches = new Dictionary<string, TypePatchInfo>()
@@ -188,6 +190,20 @@ namespace WPR
                     NewNamespace = "WPR.WindowsCompability"
                 }
                 },
+                //!
+                { "System.Windows.Media.Imaging.WriteableBitmap", new TypePatchInfo()
+                {
+                    Reference = SystemWindowsMediaImagingRef,
+                    NewNamespace = "WPR.WindowsCompability"
+                }
+                },
+                 //!
+                { "System.Windows.Media.Imaging.BitmapSource", new TypePatchInfo()
+                {
+                    Reference = SystemWindowsMediaImagingRef,
+                    //NewNamespace = "WPR.WindowsCompability"
+                }
+                },
                 { "System.Windows.MessageBox", new TypePatchInfo()
                 {
                     Reference = WindowsCompRef
@@ -210,12 +226,27 @@ namespace WPR
                 //!
                 {
                     "System.Byte[] System.Security.Cryptography.ProtectData::Protect(System.Byte[],System.Byte[])",
-                    typeof(WPR.WindowsCompability.ProtectedData)//Cryptography)
+                    typeof(WPR.WindowsCompability.ProtectedData)
                 },
                  //!
                 {
                     "System.Byte[] System.Security.Cryptography.ProtectData::Unprotect(System.Byte[],System.Byte[])",
-                    typeof(WPR.WindowsCompability.ProtectedData)//.Cryptography)
+                    typeof(WPR.WindowsCompability.ProtectedData)
+                },
+                 //!
+                {
+                    "System.Windows.Media.Imaging.WriteableBitmap System.Windows.Media.Imaging.WriteableBitmap(System.Integer,System.Integer)",
+                    typeof(WPR.WindowsCompability.WriteableBitmap)
+                },
+                 //!
+                //{
+                //    "System.Windows.Media.Imaging.BitmapSource System.Windows.Media.Imaging.BitmapSource(System.Integer,System.Integer)",
+                //    typeof(WPR.WindowsCompability.BitmapSource)
+                //},
+                //!
+                {
+                    "System.Void System.Windows.Media.Imaging.BitmapSource::SetSource(System.IO.Stream)",
+                    typeof(WPR.WindowsCompability.BitmapSource)
                 },
 
                 {
@@ -488,6 +519,7 @@ namespace WPR
             module.AssemblyReferences.Add(ServiceModelHTTPRef);
             module.AssemblyReferences.Add(StandardCompRef);
             module.AssemblyReferences.Add(SystemSecurityCryptographyRef);//!
+            module.AssemblyReferences.Add(SystemWindowsMediaImagingRef);//
 
             // create Ref. Patch Cache
             Dictionary<string, TypeReference> typeRefPatchCache 

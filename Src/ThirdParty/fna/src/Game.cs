@@ -449,17 +449,23 @@ namespace Microsoft.Xna.Framework
                 Debug.WriteLine("[ex] Game - RunLoop ex: " + ex.Message);
             }
 
-			try
+			try 
 			{
 				EndRun();
-			}
-			catch { }
+			} 
+			catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] Game - EndRun ex: " + ex.Message);
+            }
 
 			try
 			{
 				AfterLoop();
 			}
-			catch { }
+			catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] Game - AfterLoop ex: " + ex.Message);
+            }
 		}
 
 		public void Tick()
@@ -777,6 +783,7 @@ namespace Microsoft.Xna.Framework
 					catch (Exception ex)
 				    {
 						Debug.WriteLine("updateable.Update ex.: " + ex.Message);
+						throw;
 					}
 				}
 			}

@@ -74,10 +74,10 @@ namespace Microsoft.Xna.Framework.Graphics
 			//RnD
 			//if (format != SurfaceFormat.Color)
 			//{
-			//	if (width > 640) //800
-			//		width = 640;
-			//	if (height > 480) 
-			//		width = 480;
+				//if (width > 640) //800
+				//	width = 640;
+				//if (height > 480) 
+				//	width = 480;
 			//}
 
             Width = width;
@@ -130,9 +130,9 @@ namespace Microsoft.Xna.Framework.Graphics
                     format = SurfaceFormat.Color;
                 }
 
-                //if (format != SurfaceFormat.Color)
-                //{
-                //format = SurfaceFormat.NormalizedByte2;
+				//if (format != SurfaceFormat.Color)
+				//{
+				//format = SurfaceFormat.Dxt5;//.NormalizedByte2;
                 //}
 
                 //TEST: Low-memory devices

@@ -27,16 +27,19 @@ namespace Microsoft.Phone.Info
                 case "DeviceTotalMemory":
 
                     // Return 2GB RAM
-                    return 2048L * 1024 * 1024; 
+                    //return 2048L * 1024 * 1024;
+                    return 4096L * 1024 * 1024;
 
                 case "ApplicationMemoryLimit":
 
                     // Return 512MB RAM //2GB RAM
-                    return 512L * 1024 * 1024; 
+                    //return 512L * 1024 * 1024; 
+                    return 2048L * 1024 * 1024;
 
                 case "ApplicationWorkingSetLimit":
                     // Return 1GB RAM
-                    return 1024L * 1024 * 1024; 
+                    //return 1024L * 1024 * 1024; 
+                    return 2048L * 1024 * 1024;
 
                 default:
                     return null;
