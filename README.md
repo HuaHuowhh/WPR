@@ -31,7 +31,7 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 ## Building 
 ### Windows (Desktop) target  
 - I used the newest VS 2022 Preview to build this src code
-- Add https://pkgs.dev.azure.com/AvaloniaUI/AvaloniaUI/_packaging/avalonia-all/nuget/v3/index.json to Nuget-package list (it allows to add packages Avalonia.xxx v11.0.999-cibuild0023504-beta)
+- Add https://pkgs.dev.azure.com/AvaloniaUI/AvaloniaUI/_packaging/avalonia-all/nuget/v3/index.json to Nuget-package list (it allows to auto-download packages Avalonia.xxx v11.0.999-cibuild0023504-beta on the solution rebuilding)
 - Build these libraries and place them under the same folder as the executable
 - Place FFMPEG executable (you can download from their website or make a custom version with WMA->OGG conversion supported)
 - Beside submodules included in this repostiory, this application depends on these native DLLs:
