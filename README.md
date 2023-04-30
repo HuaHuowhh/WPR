@@ -27,6 +27,7 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - More installed mini-games can start now... but not all... ehhhh! )
 - Last WPR Desktop "dirty bugfixes" transferred (sync-ed) to WPR Android
 - Zuma and Earthworm Jim game running ok at now... but some artifacts still present ;)
+- Feed Me Oil game fixed a little (starts normally... but game process fails when I click the pipe!)  
 
     
 ## Building 

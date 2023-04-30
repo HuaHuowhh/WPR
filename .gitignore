@@ -2,4 +2,6 @@ bin/
 obj/
 .vs/
 x64/
+x32/
+arm/
 *.bak
