@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "evM3IndkhvHJhSrWFJ6u4qBpz1OOiNc3wrNfnrYMJXV4iohoWjrKrxAL21IjhfWY9ehbeISD+wbbai6ytAiM1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\k4os.compression.lz4\\1.2.16\\k4os.compression.lz4.1.2.16.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.android.ref.31\\32.0.485\\microsoft.android.ref.31.32.0.485.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

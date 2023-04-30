@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netcoreapp3.1\DesktopNotifications.Windows.deps.json
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netcoreapp3.1\DesktopNotifications.Windows.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netcoreapp3.1\DesktopNotifications.Windows.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netcoreapp3.1\DesktopNotifications.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netcoreapp3.1\DesktopNotifications.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.csproj.CopyComplete
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\obj\Debug\netcoreapp3.1\DesktopNotifications.Windows.pdb

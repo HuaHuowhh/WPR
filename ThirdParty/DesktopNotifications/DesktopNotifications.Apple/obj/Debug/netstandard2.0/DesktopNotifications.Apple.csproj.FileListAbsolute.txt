@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\bin\Debug\netstandard2.0\DesktopNotifications.Apple.deps.json
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\bin\Debug\netstandard2.0\DesktopNotifications.Apple.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\bin\Debug\netstandard2.0\DesktopNotifications.Apple.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\bin\Debug\netstandard2.0\DesktopNotifications.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\bin\Debug\netstandard2.0\DesktopNotifications.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.csproj.CopyComplete
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\obj\Debug\netstandard2.0\DesktopNotifications.Apple.pdb

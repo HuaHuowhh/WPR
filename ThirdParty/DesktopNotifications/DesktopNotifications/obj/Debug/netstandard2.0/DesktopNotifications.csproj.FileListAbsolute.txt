@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netstandard2.0\DesktopNotifications.deps.json
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netstandard2.0\DesktopNotifications.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netstandard2.0\DesktopNotifications.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\obj\Debug\netstandard2.0\DesktopNotifications.pdb

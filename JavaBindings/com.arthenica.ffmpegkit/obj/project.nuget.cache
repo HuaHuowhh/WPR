@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gdh/bli66KV5dTISLa+cRC9kNMp68AdV91j5bj/zUtDFmGz/hn9zmD2F128bvacd4jxLW7jd+iGrt687kkifHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.android.ref.31\\32.0.485\\microsoft.android.ref.31.32.0.485.nupkg.sha512"
+  ],
+  "logs": []
+}

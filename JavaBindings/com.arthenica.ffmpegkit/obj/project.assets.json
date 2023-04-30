@@ -1,0 +1,126 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-android31.0": {
+      "com.arthenica.smartexception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/com.arthenica.smartexception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/com.arthenica.smartexception.dll": {}
+        }
+      },
+      "com.arthenica.smartexception.java/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/com.arthenica.smartexception.java.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/com.arthenica.smartexception.java.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "com.arthenica.smartexception/1.0.0": {
+      "type": "project",
+      "path": "../com.arthenica.smartexception/com.arthenica.smartexception.csproj",
+      "msbuildProject": "../com.arthenica.smartexception/com.arthenica.smartexception.csproj"
+    },
+    "com.arthenica.smartexception.java/1.0.0": {
+      "type": "project",
+      "path": "../com.arthenica.smartexception.java/com.arthenica.smartexception.java.csproj",
+      "msbuildProject": "../com.arthenica.smartexception.java/com.arthenica.smartexception.java.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-android31.0": [
+      "com.arthenica.smartexception >= 1.0.0",
+      "com.arthenica.smartexception.java >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
+      "projectName": "com.arthenica.ffmpegkit",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-android"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/AvaloniaUI/AvaloniaUI/_packaging/avalonia-all/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-android31.0": {
+          "targetAlias": "net6.0-android",
+          "projectReferences": {
+            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj"
+            },
+            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-android31.0": {
+        "targetAlias": "net6.0-android",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Android.Ref.31",
+            "version": "[32.0.485, 32.0.485]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.Android": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.300-preview.23179.2\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WPR.XnaCompability/1.0.0": {
+        "dependencies": {
+          "FNA": "1.0.0",
+          "FNA.Reference": "22.8.0.0",
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.17763.26"
+        },
+        "runtime": {
+          "WPR.XnaCompability.dll": {}
+        }
+      },
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.17763.26": {
+        "runtime": {
+          "Microsoft.Windows.SDK.NET.dll": {
+            "assemblyVersion": "10.0.17763.24",
+            "fileVersion": "10.0.17763.26"
+          },
+          "WinRT.Runtime.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.4.39141"
+          }
+        }
+      },
+      "FNA/1.0.0": {
+        "runtime": {
+          "FNA.dll": {}
+        }
+      },
+      "FNA.Reference/22.8.0.0": {
+        "runtime": {
+          "FNA.dll": {
+            "assemblyVersion": "22.8.0.0",
+            "fileVersion": "22.8.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPR.XnaCompability/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.17763.26": {
+      "type": "runtimepack",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FNA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FNA.Reference/22.8.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

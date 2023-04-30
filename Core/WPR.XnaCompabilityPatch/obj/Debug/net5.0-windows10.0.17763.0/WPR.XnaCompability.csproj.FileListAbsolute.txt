@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\bin\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.deps.json
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\bin\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.dll
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\bin\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.pdb
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\bin\Debug\net5.0-windows10.0.17763.0\FNA.dll
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\bin\Debug\net5.0-windows10.0.17763.0\FNA.pdb
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\bin\Debug\net5.0-windows10.0.17763.0\FNA.dll.config
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.csproj.CopyComplete
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.dll
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\refint\WPR.XnaCompability.dll
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\WPR.XnaCompability.pdb
+C:\Users\Admin\source\repos\WPR\Src\Core\WPR.XnaCompabilityPatch\obj\Debug\net5.0-windows10.0.17763.0\ref\WPR.XnaCompability.dll

@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.deps.json
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.pdb
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.csproj.CopyComplete
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.dll
+C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.MaterialDesign\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.MaterialDesign.pdb

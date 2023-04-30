@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DesktopNotifications.Windows</id>
+    <version>1.0.0</version>
+    <authors>DesktopNotifications.Windows</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/pr8x/DesktopNotifications</projectUrl>
+    <description>A cross-platform C# library for native desktop "toast" notifications.</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="DesktopNotifications" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Toolkit.Uwp.Notifications" version="7.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0-windows10.0.17763">
+        <dependency id="DesktopNotifications" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Toolkit.Uwp.Notifications" version="7.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="DesktopNotifications" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Toolkit.Uwp.Notifications" version="7.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Windows.SDK.Contracts" version="10.0.22621.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\net5.0-windows10.0.17763.0\DesktopNotifications.Windows.dll" target="lib\net5.0-windows10.0.17763\DesktopNotifications.Windows.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netcoreapp3.1\DesktopNotifications.Windows.dll" target="lib\netcoreapp3.1\DesktopNotifications.Windows.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\bin\Debug\netstandard2.0\DesktopNotifications.Windows.dll" target="lib\netstandard2.0\DesktopNotifications.Windows.dll" />
+  </files>
+</package>

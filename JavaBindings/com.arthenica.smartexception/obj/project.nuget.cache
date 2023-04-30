@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0XM7DehReYcaGZ1WjJr5c3UqqxwsZzz38DtrfI8M+noYKhxsvcZvj9mpBzm4ShAhz4kieU9r9AP7pp0/PUk/JQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.android.ref.31\\32.0.485\\microsoft.android.ref.31.32.0.485.nupkg.sha512"
+  ],
+  "logs": []
+}

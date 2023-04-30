@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "SAkDolD94s5R8l29b2EUjFB1ms3wt+bRpFKOwQGRW5vCHDIz04pwRNq24by7ugBE8Ul+sSI0mslBI4nep41DJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Device.Sensors\\Microsoft.Devices.Sensors.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.annotation\\1.1.0.9\\xamarin.androidx.annotation.1.1.0.9.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.arch.core.common\\2.1.0.8\\xamarin.androidx.arch.core.common.2.1.0.8.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.browser\\1.3.0.5\\xamarin.androidx.browser.1.3.0.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.collection\\1.1.0.7\\xamarin.androidx.collection.1.1.0.7.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.core\\1.3.2.3\\xamarin.androidx.core.1.3.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.lifecycle.common\\2.3.0.1\\xamarin.androidx.lifecycle.common.2.3.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.lifecycle.runtime\\2.3.0.1\\xamarin.androidx.lifecycle.runtime.2.3.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.migration\\1.0.8\\xamarin.androidx.migration.1.0.8.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.multidex\\2.0.1.5\\xamarin.androidx.multidex.2.0.1.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.7\\xamarin.androidx.versionedparcelable.1.1.1.7.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.26\\microsoft.windows.sdk.net.ref.10.0.17763.26.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.android.ref.31\\32.0.485\\microsoft.android.ref.31.32.0.485.nupkg.sha512"
+  ],
+  "logs": []
+}

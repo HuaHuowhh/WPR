@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DesktopNotifications</id>
+    <version>1.0.0</version>
+    <authors>DesktopNotifications</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/pr8x/DesktopNotifications</projectUrl>
+    <description>A cross-platform C# library for native desktop "toast" notifications.</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+      <group targetFramework="net5.0-windows10.0.17763" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\net5.0-windows10.0.17763.0\DesktopNotifications.dll" target="lib\net5.0-windows10.0.17763\DesktopNotifications.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netcoreapp3.1\DesktopNotifications.dll" target="lib\netcoreapp3.1\DesktopNotifications.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netstandard2.0\DesktopNotifications.dll" target="lib\netstandard2.0\DesktopNotifications.dll" />
+  </files>
+</package>
