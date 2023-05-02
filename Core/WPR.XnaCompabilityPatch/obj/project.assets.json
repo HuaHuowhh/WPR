@@ -48,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.XnaCompabilityPatch\\WPR.XnaCompability.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.XnaCompabilityPatch\\WPR.XnaCompability.csproj",
       "projectName": "WPR.XnaCompability",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.XnaCompabilityPatch\\WPR.XnaCompability.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.XnaCompabilityPatch\\WPR.XnaCompability.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.XnaCompabilityPatch\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.XnaCompabilityPatch\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -77,16 +77,16 @@
         "net5.0-windows10.0.17763": {
           "targetAlias": "net5.0-windows10.0.17763.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\fna\\FNA.Core.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\fna\\FNA.Core.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\fna\\FNA.Core.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\fna\\FNA.Core.csproj"
             }
           }
         },
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\fna\\FNA.Core.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\fna\\FNA.Core.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\fna\\FNA.Core.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\fna\\FNA.Core.csproj"
             }
           }
         }

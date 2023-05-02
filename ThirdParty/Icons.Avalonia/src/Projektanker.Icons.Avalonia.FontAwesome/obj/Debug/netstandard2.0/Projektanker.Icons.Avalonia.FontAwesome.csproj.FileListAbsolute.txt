@@ -11,3 +11,16 @@ C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.I
 C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.csproj.CopyComplete
 C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.dll
 C:\Users\Admin\source\repos\WPR\Src\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.pdb
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.deps.json
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.dll
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.pdb
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.dll
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\bin\Debug\netstandard2.0\Projektanker.Icons.Avalonia.pdb
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.csproj.CopyComplete
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.dll
+C:\Users\Admin\source\repos\WPR\ThirdParty\Icons.Avalonia\src\Projektanker.Icons.Avalonia.FontAwesome\obj\Debug\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.pdb

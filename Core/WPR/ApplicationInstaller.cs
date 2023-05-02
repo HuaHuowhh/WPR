@@ -13,6 +13,7 @@ using System.Linq;
 
 using WPR.Common;
 using WPR.Models;
+using System.Diagnostics;
 
 namespace WPR
 {
@@ -96,9 +97,22 @@ namespace WPR
                     }
                 }
 
+                //RnD
                 if (!Enum.TryParse(runtimeTypeAttrb.Value, true, out ApplicationType runtimeTypeParsed))
                 {
-                    return ( ApplicationInstallError.NotSupportedAppType, app, dataFolderProduct );
+                   
+                    Debug.WriteLine
+                    (
+                        "[warn] " +
+                        ApplicationInstallError.NotSupportedAppType + " | " +
+                        "(" + runtimeTypeAttrb.Value +")" + 
+                        app + " | " +
+                        dataFolderProduct
+                    );
+
+                    // comment it for to obtain SL-type game installing
+                    return (ApplicationInstallError.NotSupportedAppType, app,
+                        dataFolderProduct + ":" + runtimeTypeAttrb.Value);
                 }
 
                 XmlAttribute? authorAttrib = appNode!.Attributes!["Author"];

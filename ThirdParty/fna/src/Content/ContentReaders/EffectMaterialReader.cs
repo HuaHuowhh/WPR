@@ -28,7 +28,8 @@ namespace Microsoft.Xna.Framework.Content
 			Effect effect = input.ReadExternalReference<Effect>();
 			EffectMaterial effectMaterial = new EffectMaterial(effect);
 			Dictionary<string, object> dict = input.ReadObject<Dictionary<string, object>>();
-			foreach (KeyValuePair<string, object> item in dict) {
+			foreach (KeyValuePair<string, object> item in dict) 
+			{
 				EffectParameter parameter = effectMaterial.Parameters[item.Key];
 				if (parameter != null)
 				{
@@ -95,7 +96,12 @@ namespace Microsoft.Xna.Framework.Content
 					}
 					else
 					{
-						throw new NotSupportedException("Parameter type is not supported");
+						//throw new NotSupportedException("Parameter type is not supported");
+						Debug.WriteLine(
+							"[ex] FNACore - Parameter type is not supported :" +
+							itemType.ToString() );
+
+						return default;//RnD
 					}
 				}
 				else

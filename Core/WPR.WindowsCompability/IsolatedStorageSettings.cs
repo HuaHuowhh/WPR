@@ -12,17 +12,17 @@ using WPR.Common;
 
 namespace WPR.WindowsCompability
 {
-    public sealed class IsolatedStorageSettings : IDictionary<string, object>, IDictionary,
+    public sealed class IsolatedStorageSettings1 : IDictionary<string, object>, IDictionary,
         ICollection<KeyValuePair<string, object>>, ICollection,
         IEnumerable<KeyValuePair<string, object>>, IEnumerable
     {
-        private static IsolatedStorageSettings _ApplicationSettings;
+        private static IsolatedStorageSettings1 _ApplicationSettings;
         private const string LocalSettingsName = "__LocalSettings";
 
         private IsolatedStorageFile _Holder;
         private Dictionary<string, object> _Settings;
 
-        internal IsolatedStorageSettings(IsolatedStorageFile file)
+        internal IsolatedStorageSettings1(IsolatedStorageFile file)
         {
             _Holder = file;
             if (!file.FileExists(LocalSettingsName))
@@ -56,7 +56,7 @@ namespace WPR.WindowsCompability
             }
         }
 
-        ~IsolatedStorageSettings()
+        ~IsolatedStorageSettings1()
         {
             Save();
         }
@@ -71,14 +71,14 @@ namespace WPR.WindowsCompability
         }
 
 
-        public static IsolatedStorageSettings ApplicationSettings
+        public static IsolatedStorageSettings1 ApplicationSettings
         {
             get
             {
                 if (_ApplicationSettings == null)
                 {
                     _ApplicationSettings = new 
-                        IsolatedStorageSettings(
+                        IsolatedStorageSettings1(
                             IsolatedStorageFile.GetUserStoreForApplication());
                 }
 
@@ -216,6 +216,7 @@ namespace WPR.WindowsCompability
             return _Settings.TryGetValue(key, out value);
         }
 
+       
         IEnumerator IEnumerable.GetEnumerator()
         {
             return _Settings.GetEnumerator();

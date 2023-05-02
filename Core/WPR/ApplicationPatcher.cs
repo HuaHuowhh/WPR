@@ -87,6 +87,7 @@ namespace WPR
                 { "System.IO.IsolatedStorage.IsolatedStorageSettings", new TypePatchInfo()
                 {
                     Reference = WindowsCompRef,
+                    NewName="IsolatedStorageSettings2", //RnD
                     NewNamespace = "WPR.WindowsCompability"
                 }
                 },
@@ -191,22 +192,31 @@ namespace WPR
                 //!
                 { "System.Security.Cryptography.ProtectedData", new TypePatchInfo()
                 {
-                    Reference = WindowsCompRef,//SystemSecurityCryptographyRef,
+                    Reference = WindowsCompRef,
+                    //RnD : if uncomment it, WPR.WindowsCompabilityProtectedData class will be used
+                    NewName = "ProtectedData", 
+                    NewNamespace = "WPR.WindowsCompability"
+                }
+                },
+                //!
+                { "System.Windows.Media.Imaging.BitmapImage", new TypePatchInfo()
+                {
+                    Reference = WindowsCompRef,
+                    NewName = "BitmapImage",//RnD
                     NewNamespace = "WPR.WindowsCompability"
                 }
                 },
                 //!
                 { "System.Windows.Media.Imaging.WriteableBitmap", new TypePatchInfo()
                 {
-                    Reference = WindowsCompRef,//SystemWindowsMediaImagingRef,
+                    Reference = WindowsCompRef,
                     NewNamespace = "WPR.WindowsCompability"
                 }
                 },
                  //!
                 { "System.Windows.Media.Imaging.BitmapSource", new TypePatchInfo()
                 {
-                    Reference = WindowsCompRef,//SystemWindowsMediaImagingRef,
-                    NewName = "BitmapSource2",
+                    Reference = WindowsCompRef,
                     NewNamespace = "WPR.WindowsCompability"
                 }
                 },
@@ -235,7 +245,17 @@ namespace WPR
                 //    "System.Byte[] System.......::MethodName(System.Byte[],System.Byte[])",
                 //    typeof(WPR.WindowsCompability.WebServices)
                 //},
-                //!
+
+                //!                
+                {
+                    "System.Boolean System.IO.IsolatedStorage.IsolatedStorageSettings::TryGetValue(System.String, ByRef)",
+                    typeof(WPR.WindowsCompability.IsolatedStorageSettings2)
+                },
+                {
+                    "System.IO.IsolatedStorage.IsolatedStorageSettings System.IO.IsolatedStorage.IsolatedStorageSettings::get_ApplicationSettings()",
+                    typeof(WPR.WindowsCompability.IsolatedStorageSettings2)
+                },
+
                 {
                     "System.Byte[] System.Security.Cryptography.ProtectedData::Protect(System.Byte[],System.Byte[])",
                     typeof(WPR.WindowsCompability.ProtectedData)
@@ -267,6 +287,7 @@ namespace WPR
                     "Microsoft.Xna.Framework.Graphics.DisplayMode Microsoft.Xna.Framework.Graphics.GraphicsAdapter::get_CurrentDisplayMode()",
                     typeof(WPR.XnaCompability.Graphics.GraphicsAdapter2)
                 },
+                
                 {
                     "System.String System.IO.Path::GetDirectoryName(System.String)",
                     typeof(WPR.WindowsCompability.Path2)
@@ -283,15 +304,12 @@ namespace WPR
                     "System.Void System.GC::Collect()",
                     typeof(WPR.WindowsCompability.GC2)
                 },
+
                 {
                     "System.Xml.Linq.XElement System.Xml.Linq.XElement::Load(System.String)",
                     typeof(WPR.StandardCompability.Xml.Linq.XElement2)
                 },
-               // {
-               //     //WARNING: Experimental!!! Remove it if game fails!!!!
-               //     "System.Windows.Media.Imaging System.Windows.Media.Imaging::WritableBitmap(System.String)",
-               //     typeof(WPR.WindowsCompability.WritableBitmap)
-               // },
+              
             };
 
         }//ApplicationPatcher

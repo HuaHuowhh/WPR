@@ -10,3 +10,15 @@ C:\Users\Admin\source\repos\WPR\Src\Core\System.Device\obj\Debug\net5.0-windows1
 C:\Users\Admin\source\repos\WPR\Src\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\refint\System.Device.dll
 C:\Users\Admin\source\repos\WPR\Src\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.pdb
 C:\Users\Admin\source\repos\WPR\Src\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\ref\System.Device.dll
+C:\Users\Admin\source\repos\WPR\Core\System.Device\bin\Debug\net5.0-windows10.0.17763.0\System.Device.deps.json
+C:\Users\Admin\source\repos\WPR\Core\System.Device\bin\Debug\net5.0-windows10.0.17763.0\System.Device.dll
+C:\Users\Admin\source\repos\WPR\Core\System.Device\bin\Debug\net5.0-windows10.0.17763.0\System.Device.pdb
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.dll
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\refint\System.Device.dll
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\System.Device.pdb
+C:\Users\Admin\source\repos\WPR\Core\System.Device\obj\Debug\net5.0-windows10.0.17763.0\ref\System.Device.dll

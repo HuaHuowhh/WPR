@@ -17,7 +17,7 @@ namespace WPR.WindowsCompability
         {
         }
 
-        //RnD
+        //RnD : static
         public static byte[] Protect(byte[] byteArrayOfOriginalData, byte[] additionalEntropyOrSalt)
         {       
             byte[] result = System.Security.Cryptography
@@ -27,7 +27,7 @@ namespace WPR.WindowsCompability
             return result;
         }
 
-        //RnD
+        //RnD : static
         public static byte[] Unprotect(byte[] byteArrayOfOriginalData, byte[] additionalEntropyOrSalt)
         {
             byte[] result = System.Security.Cryptography

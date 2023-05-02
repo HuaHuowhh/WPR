@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g0ySHuCdYgiu+owcrci8t/ftcYNNl7+QnZKmIDB/AY5qNQPxeeJsEptwB8sTvU+BQRPgy2HVcVU79kSvO54isg==",
+  "dgSpecHash": "1jp7ViSlqDJnqqf6IiFWN/eNxwge3xaLWd/VqDRb5kzov78lzP+G1O6dc/1ZBfZxEhSLhFMGD7s490EyfbsP+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

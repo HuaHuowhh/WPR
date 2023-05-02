@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj",
         "projectName": "assembly-store-reader",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\assembly-store-reader\\assembly-store-reader.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\assembly-store-reader\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\assembly-store-reader\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

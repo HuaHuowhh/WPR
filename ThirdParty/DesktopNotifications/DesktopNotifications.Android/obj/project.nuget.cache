@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PeacUdOCClmIBZfPU2namhw9O2KOrtpfSpIL2yKJrD4QPTJfx78h4DpYqfgcDGu9ynBcahA9KG/Fhb+FkAklUA==",
+  "dgSpecHash": "Ro2+3ONsZFVpdMLC7SA3u/nwhadUr7EA1nyNfge7IDmQxuT2vaDGgEWFySflU4EIagprqwkjeC/Xt3RMrbRhGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.annotation\\1.3.0.4\\xamarin.androidx.annotation.1.3.0.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.2.0.2\\xamarin.androidx.annotation.experimental.1.2.0.2.nupkg.sha512",

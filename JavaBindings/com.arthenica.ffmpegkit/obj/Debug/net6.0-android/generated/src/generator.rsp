@@ -4,8 +4,8 @@
 --enummetadata="obj\Debug\net6.0-android\generated\metadata"
 --assembly=com.arthenica.ffmpegkit
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\mscorlib.dll"
---ref="C:\Users\Admin\source\repos\WPR\Src\JavaBindings\com.arthenica.smartexception\bin\Debug\net6.0-android\com.arthenica.smartexception.dll"
---ref="C:\Users\Admin\source\repos\WPR\Src\JavaBindings\com.arthenica.smartexception.java\bin\Debug\net6.0-android\com.arthenica.smartexception.java.dll"
+--ref="C:\Users\Admin\source\repos\WPR\JavaBindings\com.arthenica.smartexception\bin\Debug\net6.0-android\com.arthenica.smartexception.dll"
+--ref="C:\Users\Admin\source\repos\WPR\JavaBindings\com.arthenica.smartexception.java\bin\Debug\net6.0-android\com.arthenica.smartexception.java.dll"
 --ref="C:\Users\Admin\.nuget\packages\microsoft.android.ref.31\32.0.485\ref\net6.0\Java.Interop.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.CSharp.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.VisualBasic.Core.dll"

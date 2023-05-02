@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ioVxRfrXzeI6X3W2SGWZKRFb+724np7foxRaQcJ1T4OnB6viDfSLhgGK5bPU7PFJq6FgLLJ9Ca57hXJYfgSNYg==",
+  "dgSpecHash": "ujJW3vkJ85118dSBFOoAlSN/nGJpYwgOPszhF3BHVwS7Yx6ta2agD25MxmHe+H9l6BBBJb6ytU2JwO7IjvFkWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.android.ref.31\\32.0.485\\microsoft.android.ref.31.32.0.485.nupkg.sha512"
   ],

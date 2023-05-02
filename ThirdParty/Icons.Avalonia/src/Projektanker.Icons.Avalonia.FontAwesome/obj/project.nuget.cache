@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bnJw4jPpLnF6FzFaIBpuDCOBiABLCTNxTlnPRwqQ7f1Wa1mWz7V9dYb7P3N/p2Mr20HlMs5rMCGYW1eYljV6qA==",
+  "dgSpecHash": "qivytb5VF74AGJzrBt7RK10QYijFn2EXU3yuYX5KWrcmqs0XzAM0RcU069ZZdnqh478aPenByLfuGuNL9BaMvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\Icons.Avalonia\\src\\Projektanker.Icons.Avalonia.FontAwesome\\Projektanker.Icons.Avalonia.FontAwesome.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\Icons.Avalonia\\src\\Projektanker.Icons.Avalonia.FontAwesome\\Projektanker.Icons.Avalonia.FontAwesome.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\avalonia\\11.0.0-preview1\\avalonia.11.0.0-preview1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",

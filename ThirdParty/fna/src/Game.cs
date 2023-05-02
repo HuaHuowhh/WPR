@@ -447,6 +447,8 @@ namespace Microsoft.Xna.Framework
 			catch (Exception ex)
 			{
                 Debug.WriteLine("[ex] Game - RunLoop ex: " + ex.Message);
+                Debug.WriteLine( "StackTrace: " + ex.StackTrace.ToString() );
+				throw;
             }
 
 			try 
@@ -765,31 +767,61 @@ namespace Microsoft.Xna.Framework
 
 		protected virtual void Update(GameTime gameTime)
 		{
-			lock (updateableComponents)
+			try
 			{
-				for (int i = 0; i < updateableComponents.Count; i += 1)
+				lock (updateableComponents)
 				{
-					currentlyUpdatingComponents.Add(updateableComponents[i]);
-				}
-			}
-			foreach (IUpdateable updateable in currentlyUpdatingComponents)
-			{
-				if (updateable.Enabled)
-				{
-					try
+					for (int i = 0; i < updateableComponents.Count; i += 1)
 					{
-						updateable.Update(gameTime);
-					}
-					catch (Exception ex)
-				    {
-						Debug.WriteLine("[ex] ComponentsUpdate ex.: " + ex.Message);
-						throw;
+						currentlyUpdatingComponents.Add(updateableComponents[i]);
 					}
 				}
 			}
-			currentlyUpdatingComponents.Clear();
+			catch (Exception ex)
+			{
+				Debug.WriteLine("[ex] Game - Update - Lock: " + ex.Message);
+			}
 
-			FrameworkDispatcher.Update();
+			try
+			{
+				foreach (IUpdateable updateable in currentlyUpdatingComponents)
+				{
+					if (updateable.Enabled)
+					{
+						try
+						{
+							updateable.Update(gameTime);
+						}
+						catch (Exception ex)
+						{
+							Debug.WriteLine("[ex] ComponentsUpdate ex.: " + ex.Message);
+							throw;
+						}
+					}
+				}
+			}
+			catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] Game - Update components: " + ex.Message);
+            }
+
+			try
+			{
+				currentlyUpdatingComponents.Clear();
+			}
+			catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] Game - Components clear: " + ex.Message);
+            }
+
+			try
+			{
+				FrameworkDispatcher.Update();
+			}
+			catch (Exception ex)
+            {
+                Debug.WriteLine("[ex] Game - FrameworkDispatcher Update : " + ex.Message);
+            }
 		}
 
 		protected virtual void OnExiting(object sender, EventArgs args)

@@ -12,6 +12,7 @@ using System;
 using System.Reactive.Linq;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Diagnostics;
 
 namespace WPR.UI.ViewModels
 {
@@ -55,19 +56,24 @@ namespace WPR.UI.ViewModels
             try
             {
                 var enumerable = ApplicationContext.Current.Applications!
-                        .Where(app => app.Name.ToLower().Contains((text != null) ? text.ToLower() : ""))
+                        .Where(app => app.Name.ToLower().Contains((text != null) 
+                        ? text.ToLower() : ""))
                         .OrderBy(app => app.Name.ToLower())
                         .Select(app => new ApplicationItemViewModel(app))
                         .AsEnumerable();
 
                 _ChoosenApp = null;
 
-                // So it can hear change. Replace the ref only does not make it refresh display
-                Applications = new ObservableCollection<ApplicationItemViewModel>(enumerable);
+                // So it can hear change. Replace the ref only does
+                // not make it refresh display
+                Applications = 
+                    new ObservableCollection<ApplicationItemViewModel>(enumerable);
             }
             catch (Exception ex)
             {
-                Log.Error(LogCategory.AppList, 
+                Debug.WriteLine( $"[ex] WPR.UI - ApplicationListingViewModel: " +
+                    $"Unable to query application database with exception:\n {ex}");
+                Log.Error(LogCategory.AppList,
                     $"Unable to query application database with exception:\n {ex}");
                 Applications = new ObservableCollection<ApplicationItemViewModel>();
             }

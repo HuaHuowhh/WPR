@@ -1049,6 +1049,8 @@ namespace Microsoft.Xna.Framework
 					}
 					else if (evt.window.windowEvent == SDL.SDL_WindowEventID.SDL_WINDOWEVENT_FOCUS_LOST)
 					{
+						//RnD
+						/*
 						game.IsActive = false;
 
 						if (SDL.SDL_GetCurrentVideoDriver() == "x11")
@@ -1058,6 +1060,7 @@ namespace Microsoft.Xna.Framework
 
 						// Give the screensaver back, we're not that important now.
 						SDL.SDL_EnableScreenSaver();
+						*/
 					}
 
 					// Window Resize

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SAkDolD94s5R8l29b2EUjFB1ms3wt+bRpFKOwQGRW5vCHDIz04pwRNq24by7ugBE8Ul+sSI0mslBI4nep41DJA==",
+  "dgSpecHash": "CW8+htfUhzdPALtgC9UFX/MJndBHtkzdU/MQeujrz7SXFTY2VkT7RtOSUgDfcCkoEP2II5azF5Z6Ydl2FLHpTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Device.Sensors\\Microsoft.Devices.Sensors.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Device.Sensors\\Microsoft.Devices.Sensors.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\xamarin.androidx.annotation\\1.1.0.9\\xamarin.androidx.annotation.1.1.0.9.nupkg.sha512",

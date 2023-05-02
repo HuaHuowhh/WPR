@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uaz1z8O5tbWTTl1351gapjA2m7pmqKS+/Or5XhlAkENAz65AsCx8WzMP4GK1J8vIUfYkjp4DYjF4jF6OwxY00g==",
+  "dgSpecHash": "T43hb54mFfqNiHpwgUnp/raLcirGVqlmnLUOWMvHwkkrsUBMi0gVDDXY1uNPjzvfz3uh10lJht9Xd/xm0KHC+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.WindowsCompability\\WPR.WindowsCompability.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.WindowsCompability\\WPR.WindowsCompability.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\7.0.2\\microsoft.toolkit.uwp.notifications.7.0.2.nupkg.sha512",

@@ -9,14 +9,14 @@ using System.Windows.Input;
 
 namespace WPR.WindowsCompability
 {
-    // projection: System.Windows.Media.Imaging
-    public class WriteableBitmap //RnD : static
+    // projection: System.Windows.Media.Imaging.WriteableBitmap
+    public class WriteableBitmap 
     {
-        //static WriteableBitmap writeableBitmap;
+        
         Int32 ImgActualWidth;
         Int32 ImgActualHeight;
 
-        //static 
+        
         public WriteableBitmap(Int32 ActualWidth, Int32 ActualHeight)
         {
             /*

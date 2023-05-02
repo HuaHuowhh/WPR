@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj": {
       "version": "8.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj",
         "projectName": "Microsoft.Phone",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Phone\\Microsoft.Phone.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Phone\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Phone\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

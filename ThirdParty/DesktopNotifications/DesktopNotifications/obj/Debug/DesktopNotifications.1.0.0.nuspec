@@ -15,8 +15,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\net5.0-windows10.0.17763.0\DesktopNotifications.dll" target="lib\net5.0-windows10.0.17763\DesktopNotifications.dll" />
-    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netcoreapp3.1\DesktopNotifications.dll" target="lib\netcoreapp3.1\DesktopNotifications.dll" />
-    <file src="C:\Users\Admin\source\repos\WPR\Src\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netstandard2.0\DesktopNotifications.dll" target="lib\netstandard2.0\DesktopNotifications.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\net5.0-windows10.0.17763.0\DesktopNotifications.dll" target="lib\net5.0-windows10.0.17763\DesktopNotifications.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netcoreapp3.1\DesktopNotifications.dll" target="lib\netcoreapp3.1\DesktopNotifications.dll" />
+    <file src="C:\Users\Admin\source\repos\WPR\ThirdParty\DesktopNotifications\DesktopNotifications\bin\Debug\netstandard2.0\DesktopNotifications.dll" target="lib\netstandard2.0\DesktopNotifications.dll" />
   </files>
 </package>

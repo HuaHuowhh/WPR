@@ -9,3 +9,14 @@ C:\Users\Admin\source\repos\WPR\Src\JavaBindings\Org.Libsdl.App\obj\Debug\java-r
 C:\Users\Admin\source\repos\WPR\Src\JavaBindings\Org.Libsdl.App\obj\Debug\Org.Libsdl.App.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\WPR\Src\JavaBindings\Org.Libsdl.App\obj\Debug\WPR.SDLJavaBindings.dll
 C:\Users\Admin\source\repos\WPR\Src\JavaBindings\Org.Libsdl.App\obj\Debug\WPR.SDLJavaBindings.pdb
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\bin\Debug\WPR.SDLJavaBindings.dll
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\bin\Debug\WPR.SDLJavaBindings.pdb
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\__AndroidLibraryProjects__.zip
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\MonoAndroid,Version=v5.0.AssemblyAttributes.cs
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\Org.Libsdl.App.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\class-parse.rsp
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\java-resolution-report.log
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\Org.Libsdl.App.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\WPR.SDLJavaBindings.dll
+C:\Users\Admin\source\repos\WPR\JavaBindings\Org.Libsdl.App\obj\Debug\WPR.SDLJavaBindings.pdb

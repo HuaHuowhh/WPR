@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m0jKhOvessoETrO/yAXFvyubxCB3CYA2pmYScRPBOebH2BejkRGnta5N8s8wudRSzvdOf8NyFTS+ij2ZDaL9pg==",
+  "dgSpecHash": "NFGj0hep1lSY0jD1FggETNQctd/dhMl4lZfT3Cau4qEjuFqpGC/NfklwniakDmaFFbzJGth40RbJqch6ofceMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\Icons.Avalonia\\src\\Projektanker.Icons.Avalonia.MaterialDesign\\Projektanker.Icons.Avalonia.MaterialDesign.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\Icons.Avalonia\\src\\Projektanker.Icons.Avalonia.MaterialDesign\\Projektanker.Icons.Avalonia.MaterialDesign.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\avalonia\\11.0.0-preview1\\avalonia.11.0.0-preview1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",

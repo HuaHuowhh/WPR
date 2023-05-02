@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gdh/bli66KV5dTISLa+cRC9kNMp68AdV91j5bj/zUtDFmGz/hn9zmD2F128bvacd4jxLW7jd+iGrt687kkifHA==",
+  "dgSpecHash": "O9iyQjM/ONYfO8tuUU39pmp2BmPAQFFSGmUH9X3lHnqOHhX30CoBgPdE3ikB4zwne5dCC0jlUsR1+vzpqSmVug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.android.ref.31\\32.0.485\\microsoft.android.ref.31.32.0.485.nupkg.sha512"
   ],

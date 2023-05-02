@@ -521,11 +521,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
       "projectName": "DesktopNotifications.Android",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -548,8 +548,8 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
             }
           }
         }

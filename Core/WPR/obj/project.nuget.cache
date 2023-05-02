@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a9t/vbChB6QQka2UZMqG5zoXjbwM3+fEA55llX2C9knTtGn5MOd1XpZ8Dn9PeF7kG1poXBLT2eJZMwQf7kok2g==",
+  "dgSpecHash": "X0vwKjMcGzu8lISW35xYgca2IZpcLuFowN9Uc0JNfNEf7zAPpujhVt1yJsn1UHgeaz6mphi8vgAEPW8a/HBZVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR\\WPR.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR\\WPR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\excss\\4.1.4\\excss.4.1.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\ffmpegcore\\4.8.0\\ffmpegcore.4.8.0.nupkg.sha512",

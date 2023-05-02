@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj",
         "projectName": "WPR.Common",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -36,37 +36,37 @@
           "net5.0-windows10.0.17763": {
             "targetAlias": "net5.0-windows10.0.17763.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           },
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           }
@@ -170,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
         "projectName": "DesktopNotifications.Android",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\DesktopNotifications.Android.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Android\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -200,8 +200,8 @@
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           }
@@ -250,14 +250,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj",
         "projectName": "DesktopNotifications.Apple",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\DesktopNotifications.Apple.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Apple\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -283,24 +283,24 @@
           "net5.0-windows10.0.17763": {
             "targetAlias": "net5.0-windows10.0.17763.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           },
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           }
@@ -407,14 +407,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj",
         "projectName": "DesktopNotifications.FreeDesktop",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\DesktopNotifications.FreeDesktop.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.FreeDesktop\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -439,16 +439,16 @@
           "net5.0-windows10.0.17763": {
             "targetAlias": "net5.0-windows10.0.17763.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           }
@@ -536,14 +536,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj",
         "projectName": "DesktopNotifications.Windows",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\DesktopNotifications.Windows.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications.Windows\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -569,24 +569,24 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           },
           "net5.0-windows10.0.17763": {
             "targetAlias": "net5.0-windows10.0.17763.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
+              "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj"
               }
             }
           }
@@ -718,14 +718,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj",
         "projectName": "DesktopNotifications",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

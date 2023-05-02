@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k8W0DbSV9JMZlgEEAIkdCU1QnpOUXEtJBgr6gb32931kkAcklWK3cCAZVtyeAy9MVmj5sIkSIDkxwixAcMa5xQ==",
+  "dgSpecHash": "khpeuXnhYG+ZPjRkQDXIsXNy7YaE8mpWzqodp3+r5wtbO13Lll0SuLy/0kJD4HWDZemooV2+I95+WHWsk5k2Zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\ThirdParty\\DesktopNotifications\\DesktopNotifications\\DesktopNotifications.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

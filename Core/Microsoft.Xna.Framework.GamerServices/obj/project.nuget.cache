@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wocldlxd+wnZgBzlvZb1D6nLQ8+hx0YKIwCoW9iHF1H1oWVIuUPTIIIajdLDomn+9joK9xiJwQ5J3i1Lw0NA1Q==",
+  "dgSpecHash": "W0nKC/YF3PpgHC3+rhaL++kZW8UFVOFL6bv92vqm9dXGVCwD6jy/vMlw4Yi53pqCP+T8v7tk4OgnmOHycfh24w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\Microsoft.Xna.Framework.GamerServices\\Microsoft.Xna.Framework.GamerServices.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\Microsoft.Xna.Framework.GamerServices\\Microsoft.Xna.Framework.GamerServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\excss\\4.1.4\\excss.4.1.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\htmlagilitypack\\1.11.45\\htmlagilitypack.1.11.45.nupkg.sha512",

@@ -49,11 +49,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
       "projectName": "com.arthenica.ffmpegkit",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\com.arthenica.ffmpegkit.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.ffmpegkit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -76,11 +76,11 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.smartexception.java\\com.arthenica.smartexception.java.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\com.arthenica.smartexception\\com.arthenica.smartexception.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GdlZOaEoeijb5ucjBOCPAzcAcpP1/MTPC0QVMnH45kBJ8MwZwyztyXw/C/WUZnYdqDoTS4zvtN0/lUMkBbeGqw==",
+  "dgSpecHash": "SoYs+cpegqLQOay6hBHFRYhdnro7p/b+dA7ZqzaW6FnqTuDy8ZKyKVArlLRCAwziRgi/sg2cveobgr+QfxN3DQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.XnaCompabilityPatch\\WPR.XnaCompability.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.XnaCompabilityPatch\\WPR.XnaCompability.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.26\\microsoft.windows.sdk.net.ref.10.0.17763.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",

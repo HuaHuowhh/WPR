@@ -1681,11 +1681,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.WindowsCompability\\WPR.WindowsCompability.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.WindowsCompability\\WPR.WindowsCompability.csproj",
       "projectName": "WPR.WindowsCompability",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.WindowsCompability\\WPR.WindowsCompability.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.WindowsCompability\\WPR.WindowsCompability.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.WindowsCompability\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.WindowsCompability\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -1710,16 +1710,16 @@
         "net5.0-windows10.0.17763": {
           "targetAlias": "net5.0-windows10.0.17763.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj"
             }
           }
         },
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\Core\\WPR.Common\\WPR.Common.csproj"
+            "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\Core\\WPR.Common\\WPR.Common.csproj"
             }
           }
         }

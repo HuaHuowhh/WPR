@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj",
         "projectName": "WPR.SDLJavaBindings",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\Org.Libsdl.App\\Org.Libsdl.App.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\mediaexplorer74\\WPR\\JavaBindings\\Org.Libsdl.App\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\WPR\\JavaBindings\\Org.Libsdl.App\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
