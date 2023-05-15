@@ -55,5 +55,11 @@ namespace Microsoft.Phone.Info
 
             return true;
         }
+
+        public static bool DeviceStatus()
+        {
+            //RnD
+            return true;
+        }
     }
 }

@@ -1,19 +1,14 @@
---codegen-target=XAJavaInterop1
+--only-xml-adjuster
+--xml-adjuster-output="obj\Debug\net6.0-android\api.xml"
 --csdir="obj\Debug\net6.0-android\generated\src"
---enumdir="obj\Debug\net6.0-android\generated\enums"
---enummetadata="obj\Debug\net6.0-android\generated\metadata"
---assembly=com.arthenica.ffmpegkit
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\mscorlib.dll"
---ref="C:\Users\Admin\source\repos\WPR\JavaBindings\com.arthenica.smartexception\bin\Debug\net6.0-android\com.arthenica.smartexception.dll"
---ref="C:\Users\Admin\source\repos\WPR\JavaBindings\com.arthenica.smartexception.java\bin\Debug\net6.0-android\com.arthenica.smartexception.java.dll"
---ref="C:\Users\Admin\.nuget\packages\microsoft.android.ref.31\32.0.485\ref\net6.0\Java.Interop.dll"
+--ref="C:\Users\Admin\source\repos\mediaexplorer74\WPR\JavaBindings\com.arthenica.smartexception\bin\Debug\net6.0-android\com.arthenica.smartexception.dll"
+--ref="C:\Users\Admin\source\repos\mediaexplorer74\WPR\JavaBindings\com.arthenica.smartexception.java\bin\Debug\net6.0-android\com.arthenica.smartexception.java.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.CSharp.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.VisualBasic.Core.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.VisualBasic.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.Win32.Primitives.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\Microsoft.Win32.Registry.dll"
---ref="C:\Users\Admin\.nuget\packages\microsoft.android.ref.31\32.0.485\ref\net6.0\Mono.Android.dll"
---ref="C:\Users\Admin\.nuget\packages\microsoft.android.ref.31\32.0.485\ref\net6.0\Mono.Android.Export.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\mscorlib.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\netstandard.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\System.AppContext.dll"
@@ -168,12 +163,7 @@
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\System.Xml.XPath.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\System.Xml.XPath.XDocument.dll"
 --ref="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.15\ref\net6.0\WindowsBase.dll"
-"--enumfields=Transforms\EnumFields.xml"
-"--enummethods=Transforms\EnumMethods.xml"
-"--fixup=Transforms\Metadata.xml"
 --api-level=31
---type-map-report="obj\Debug\net6.0-android\generated\type-mapping.txt"
 --global
 --public
---lang-features=interface-constants,nested-interface-types,default-interface-methods,nullable-reference-types
-"--doc-comment-verbosity=intellisense"
+--lang-features=nullable-reference-types

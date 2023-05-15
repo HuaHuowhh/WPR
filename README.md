@@ -1,4 +1,4 @@
-# WPR 0.0.6-alpha :: DEVELOPER EDITION ::
+# WPR 0.0.7-alpha :: DEVELOPER EDITION ::
 WPR is a WP7-8 XNA app runner. This is only fork of [WPR](https://github.com/8212369/WPR), not the original. 
 
 This is only my little "Avalonia Android/Desktop framework" research + micro-development (or re-development?)))
@@ -11,6 +11,7 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 - Extended error logging (sorry, there an no any "Dev UI" switch-offs at now!)
 - Some code stability improved 
 - System.Security.Cryptography "emulation" added (I noticed it needed for Countre Jour game...)
+- Microsoft.Xna.Framework.GamerServicesExtensions project started (my experimentation without any documentation))
 
 ## Screenshot(s)
 ![](Images/intro.png)
@@ -21,6 +22,8 @@ This is only my little "Avalonia Android/Desktop framework" research + micro-dev
 ![](Images/monkey.png)
 ![](Images/pac-man.png)
 ![](Images/outro.png)
+
++ "My "Atoms gameplay" (Youtube): https://www.youtube.com/watch?v=oFZza0Iw9K8
 
 
 ## My little RnD / experiments

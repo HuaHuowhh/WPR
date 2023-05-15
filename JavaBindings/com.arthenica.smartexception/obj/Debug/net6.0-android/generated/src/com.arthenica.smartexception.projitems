@@ -5,18 +5,9 @@
   </PropertyGroup>
   <!-- Classes -->
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.AbstractExceptions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.AbstractExceptions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.IClassLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.IClassLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.IPackageLoader.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.IPackageLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.IStackTraceElementSerializer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.IStackTraceElementSerializer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.StackTraceElementWrapper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.StackTraceElementWrapper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.ThrowableWrapper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Arthenica.Smartexception.ThrowableWrapper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Java.Interop.__TypeRegistrations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)__NamespaceMapping__.cs" />
   </ItemGroup>

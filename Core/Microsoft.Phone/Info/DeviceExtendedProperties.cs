@@ -41,6 +41,9 @@ namespace Microsoft.Phone.Info
                     //return 1024L * 1024 * 1024; 
                     return 2048L * 1024 * 1024;
 
+                case "DeviceStatus":
+                    return default;
+
                 default:
                     return null;
             }

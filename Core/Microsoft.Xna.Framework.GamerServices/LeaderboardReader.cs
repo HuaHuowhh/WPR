@@ -9,11 +9,24 @@ namespace Microsoft.Xna.Framework.GamerServices
     public class LeaderboardReader
     {
         private ReadOnlyCollection<LeaderboardEntry>? _Entries;
-        public ReadOnlyCollection<LeaderboardEntry>? Entries => this._Entries;
+        public ReadOnlyCollection<LeaderboardEntry>? Entries
+        {
+            get
+            {
+                return this._Entries;
+            }
+        }
 
         public LeaderboardReader()
         {
             _Entries = new ReadOnlyCollection<LeaderboardEntry>(new List<LeaderboardEntry>());
+        }
+
+        public void Dispose()
+        {
+            // RnD
+            //_Entries.Dispose();
+            return;
         }
 
         public IAsyncResult BeginPageDown(AsyncCallback callback, object asyncState)

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPR", "Core\WPR\WPR.csproj", "{A13DCCB9-0EC0-465D-B213-EC85DAB5D85F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Xna.Framework.GamerServices", "Core\Microsoft.Xna.Framework.GamerServices\Microsoft.Xna.Framework.GamerServices.csproj", "{31DA94C5-69B1-47E5-AF30-831781BD81F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Xna.Framework.GamerServicesExtensions", "Core\Microsoft.Xna.Framework.GamerServicesExtensions\Microsoft.Xna.Framework.GamerServicesExtensions.csproj", "{31DA94C5-69B1-47E5-AF30-831781BD81F0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Phone", "Core\Microsoft.Phone\Microsoft.Phone.csproj", "{2EA5CAE8-3286-4B84-8754-6A8AF951E40D}"
 EndProject
@@ -78,7 +78,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{AA3F7F2B-778E-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjekTanker.Icons", "ProjekTanker.Icons", "{609B9E8D-4DB9-429C-B4C4-A75202A3CF4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPR.StandardCompability", "Core\WPR.StandardCompability\WPR.StandardCompability.csproj", "{CC5E7BD5-4B3A-4723-A00E-9B174B94F3F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPR.StandardCompability", "Core\WPR.StandardCompability\WPR.StandardCompability.csproj", "{CC5E7BD5-4B3A-4723-A00E-9B174B94F3F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Xna.Framework.GamerServices", "Core\Microsoft.Xna.Framework.GamerServices\Microsoft.Xna.Framework.GamerServices.csproj", "{A0057B80-98C1-4E6F-92CC-B8017085BDC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -732,6 +734,30 @@ Global
 		{CC5E7BD5-4B3A-4723-A00E-9B174B94F3F0}.RelWithDebInfo|x64.Build.0 = Release|Any CPU
 		{CC5E7BD5-4B3A-4723-A00E-9B174B94F3F0}.RelWithDebInfo|x86.ActiveCfg = Release|Any CPU
 		{CC5E7BD5-4B3A-4723-A00E-9B174B94F3F0}.RelWithDebInfo|x86.Build.0 = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Debug|x64.Build.0 = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Debug|x86.Build.0 = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.MinSizeRel|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.MinSizeRel|Any CPU.Build.0 = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.MinSizeRel|x64.ActiveCfg = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.MinSizeRel|x64.Build.0 = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.MinSizeRel|x86.ActiveCfg = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.MinSizeRel|x86.Build.0 = Debug|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Release|x64.ActiveCfg = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Release|x64.Build.0 = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.Release|x86.Build.0 = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.RelWithDebInfo|Any CPU.ActiveCfg = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.RelWithDebInfo|Any CPU.Build.0 = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.RelWithDebInfo|x64.ActiveCfg = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.RelWithDebInfo|x64.Build.0 = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.RelWithDebInfo|x86.ActiveCfg = Release|Any CPU
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3}.RelWithDebInfo|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -767,6 +793,7 @@ Global
 		{DED4ABDA-245B-4AF2-9F40-179C3BCBA0E2} = {5A6560FF-794C-4369-AC8A-2019C0797869}
 		{609B9E8D-4DB9-429C-B4C4-A75202A3CF4F} = {CBBF747E-EAFE-4679-A1DB-933615B0B58F}
 		{CC5E7BD5-4B3A-4723-A00E-9B174B94F3F0} = {DED4ABDA-245B-4AF2-9F40-179C3BCBA0E2}
+		{A0057B80-98C1-4E6F-92CC-B8017085BDC3} = {0551204A-A764-45F7-91EB-6817586876E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EAFD093A-9390-4097-8A8D-6E80416BBEE3}
