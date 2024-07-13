@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!--Note: Dotnet currently does not allow to build on non-windows platforms when a windows TFM is specified-->
+	<PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+		<TargetFrameworks>netstandard2.0;net7.0-android</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+		<TargetFrameworks>netstandard2.0;netcoreapp3.1;net7.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>A cross-platform C# library for native desktop "toast" notifications.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/pr8x/DesktopNotifications</PackageProjectUrl>
+		<!--TargetFrameworks>netstandard2.0;netcoreapp3.1;net7.0</TargetFrameworks-->
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(OS)' == 'Windows_NT'">
+		<Compile Remove="NullImpl_WindowsNotificationManager.cs" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(OS)' != 'Windows_NT'">
+		<Compile Remove="ShellLink.cs" />
+		<Compile Remove="WindowsNotificationManager.cs" />
+		<Compile Remove="WindowsApplicationContext.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DesktopNotifications\DesktopNotifications.csproj" />
+		<PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Condition="'$(TargetFramework)' != 'netstandard2.0'" Version="7.0.2" />
+		<PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+		<PackageReference Include="Microsoft.Windows.SDK.Contracts" Condition="'$(TargetFramework)' == 'netstandard2.0'" Version="10.0.26100.1" />
+	</ItemGroup>
+
+</Project>

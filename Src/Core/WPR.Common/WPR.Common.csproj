@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+	<TargetFramework>net7.0-android</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+	<TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net7.0-android'">21</SupportedOSPlatformVersion>
+	<Nullable>enable</Nullable>
+       <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Condition="'$(TargetFramework)' == 'net7.0'" Include="$(SolutionDir)\ThirdParty\DesktopNotifications\DesktopNotifications.Android\DesktopNotifications.Android.csproj" />
+    <ProjectReference Include="$(SolutionDir)\ThirdParty\DesktopNotifications\DesktopNotifications.Apple\DesktopNotifications.Apple.csproj" />
+    <ProjectReference Include="$(SolutionDir)\ThirdParty\DesktopNotifications\DesktopNotifications.FreeDesktop\DesktopNotifications.FreeDesktop.csproj" />
+    <ProjectReference Include="$(SolutionDir)\ThirdParty\DesktopNotifications\DesktopNotifications.Windows\DesktopNotifications.Windows.csproj" />
+    <ProjectReference Include="$(SolutionDir)\ThirdParty\DesktopNotifications\DesktopNotifications\DesktopNotifications.csproj" />
+  </ItemGroup>
+
+</Project>

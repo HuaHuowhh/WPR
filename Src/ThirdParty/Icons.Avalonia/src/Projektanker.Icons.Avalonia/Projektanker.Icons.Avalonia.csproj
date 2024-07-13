@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <Description>A library to easily display icons in an Avalonia App.</Description>
+       <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.0.2" />
+      <PackageReference Include="Avalonia.Desktop" Version="11.0.2" />
+      <PackageReference Include="Avalonia.Diagnostics" Version="11.0.2" />
+      <PackageReference Include="Avalonia.Skia" Version="11.0.2" />
+      <PackageReference Include="System.Reactive" Version="6.0.1" />
+    </ItemGroup>
+</Project>
